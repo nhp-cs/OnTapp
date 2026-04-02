@@ -47,7 +47,11 @@ export async function supabaseListAttempts({ limit = 30 } = {}) {
   )}`;
 
   const res = await fetch(endpoint, { headers: buildHeaders(cfg.anonKey) });
-  if (!res.ok) return { ok: false, reason: "http", status: res.status, attempts: [] };
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    return { ok: false, reason: "http", status: res.status, detail: text, attempts: [] };
+  }
+
   const attempts = await res.json().catch(() => []);
   return { ok: true, attempts: Array.isArray(attempts) ? attempts : [] };
 }
@@ -60,6 +64,9 @@ export async function supabaseClearAttempts() {
   // delete all rows (requires RLS policy permitting delete; for safety we won't enable this by default)
   const endpoint = `${url}/rest/v1/attempts?id=gt.0`;
   const res = await fetch(endpoint, { method: "DELETE", headers: buildHeaders(cfg.anonKey, { Prefer: "return=minimal" }) });
-  if (!res.ok) return { ok: false, reason: "http", status: res.status };
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    return { ok: false, reason: "http", status: res.status, detail: text };
+  }
   return { ok: true };
 }

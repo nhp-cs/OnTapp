@@ -134,17 +134,47 @@ async function refreshAttempts() {
   const attempts = res.attempts || [];
   const total = attempts.length;
 
-  const last = attempts[0]?.submitted_at || attempts[0]?.submittedAt || attempts[0]?.created_at || attempts[0]?.createdAt || null;
-  const lastText = last ? ` • Gần nhất: ${formatDateTime(last)}` : "";
-
-  const avgPct = total > 0 ? Math.round(attempts.reduce((acc, a) => acc + (Number(a?.pct) || 0), 0) / total) : 0;
-  const bestPct = total > 0 ? Math.max(...attempts.map((a) => Number(a?.pct) || 0)) : 0;
+  const backend = attemptsBackend();
 
   if (els.attemptsLine) {
-    els.attemptsLine.textContent = `${attemptsBackend()} • ${total} lượt • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
+    if (!res.ok) {
+      const status = res.error?.status ?? res.status ?? "";
+      const reason = res.error?.reason ?? res.reason ?? "";
+      els.attemptsLine.textContent = `${backend} • lỗi ${status || "?"}${reason ? ` (${reason})` : ""}`;
+    } else {
+      const last =
+        attempts[0]?.submitted_at ||
+        attempts[0]?.submittedAt ||
+        attempts[0]?.created_at ||
+        attempts[0]?.createdAt ||
+        null;
+      const lastText = last ? ` • Gần nhất: ${formatDateTime(last)}` : "";
+
+      const avgPct = total > 0 ? Math.round(attempts.reduce((acc, a) => acc + (Number(a?.pct) || 0), 0) / total) : 0;
+      const bestPct = total > 0 ? Math.max(...attempts.map((a) => Number(a?.pct) || 0)) : 0;
+
+      els.attemptsLine.textContent = `${backend} • ${total} lượt • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
+    }
   }
 
   if (!els.attemptsList) return;
+
+  if (!res.ok) {
+    const status = res.error?.status ?? res.status ?? "";
+    const detail = String(res.error?.detail ?? res.detail ?? "").trim();
+    const msg = [
+      `Không đọc được lượt thi từ Supabase (status ${status || "?"}).`,
+      detail ? `Chi tiết: ${detail}` : "",
+      "Kiểm tra: table `attempts` có bật RLS + có policy SELECT cho role `anon`.",
+      "Ngoài ra kiểm tra table có được expose qua API và đúng schema `public`.",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    els.attemptsList.innerHTML = `<pre class="preBox">${escapeHtml(msg)}</pre>`;
+    return;
+  }
+
   if (total === 0) {
     els.attemptsList.innerHTML = "";
     return;
@@ -173,8 +203,7 @@ async function refreshAttempts() {
       `;
     })
     .join("");
-}
-async function exportAttempts() {
+}\nasync function exportAttempts() {
   const res = await listAttempts(1000);
   const attempts = res.attempts || [];
   const blob = new Blob([JSON.stringify(attempts, null, 2)], { type: "application/json;charset=utf-8" });
@@ -329,6 +358,7 @@ setStatus("", "info");
 updateButtons();
 refreshStats();
 refreshAttempts().finally(refreshBackendUI);
+
 
 
 

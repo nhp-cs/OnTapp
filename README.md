@@ -54,19 +54,11 @@ create table if not exists public.attempts (
 alter table public.attempts enable row level security;
 
 -- Cho phép ghi (INSERT) từ người dùng không đăng nhập
-create policy if not exists attempts_insert_anon
-on public.attempts
-for insert
-to anon
-with check (true);
+create policy attempts_insert_anon\non public.attempts\nfor insert\nto anon\nwith check (true);
 
 -- Cho phép đọc (SELECT) để trang admin xem thống kê.
 -- Lưu ý: ai có anon key cũng có thể đọc dữ liệu.
-create policy if not exists attempts_select_anon
-on public.attempts
-for select
-to anon
-using (true);
+create policy attempts_select_anon\non public.attempts\nfor select\nto anon\nusing (true);
 ```
 
 ### 2) Lấy URL + anon key
@@ -117,3 +109,4 @@ GitHub Pages là static, nên để mọi người thấy đề mới:
 - Export JSON từ trang admin
 - Thêm đề vào `data/exams.json`
 - Commit & push lên GitHub
+

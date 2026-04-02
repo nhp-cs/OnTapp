@@ -566,16 +566,4 @@ textarea {
 
 .footer {
   padding-bottom: 28px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+}\r\n\r\n.preBox {\r\n  margin: 0;\r\n  padding: 12px;\r\n  border: 1px solid rgba(15, 23, 42, 0.12);\r\n  border-radius: 14px;\r\n  background: rgba(15, 23, 42, 0.02);\r\n  font-family: var(--mono);\r\n  font-size: 13px;\r\n  line-height: 1.35;\r\n  white-space: pre-wrap;\r\n}\r\n
