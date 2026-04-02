@@ -11,6 +11,8 @@ const els = {
 
   nameInput: document.getElementById("nameInput"),
   nameHelp: document.getElementById("nameHelp"),
+  examSelect: document.getElementById("examSelect"),
+  examHelp: document.getElementById("examHelp"),
   startBtn: document.getElementById("startBtn"),
 
   quizMeta: document.getElementById("quizMeta"),
@@ -35,6 +37,9 @@ const els = {
   review: document.getElementById("review"),
 };
 
+const LS_SELECTED_EXAM = "ontap_selected_exam_v1";
+
+let availableExams = [];
 let activeExam = null;
 let questionById = new Map();
 let questionOrder = [];
@@ -102,12 +107,68 @@ function normalizeExam(exam) {
   return exam;
 }
 
-function getActiveExam(bundled, custom) {
-  const customExam = normalizeExam(custom?.[0]);
-  if (customExam) return customExam;
-  const bundledExam = normalizeExam(bundled?.[0]);
-  if (bundledExam) return bundledExam;
-  return null;
+function buildAvailableExams(bundled, custom) {
+  const out = [];
+  for (const e of Array.isArray(bundled) ? bundled : []) {
+    const ex = normalizeExam(e);
+    if (ex) out.push(ex);
+  }
+  for (const e of Array.isArray(custom) ? custom : []) {
+    const ex = normalizeExam(e);
+    if (ex) out.push(ex);
+  }
+  return out;
+}
+
+function findExamById(exams, id) {
+  if (!id) return null;
+  return exams.find((e) => e.id === id) ?? null;
+}
+
+function getInitialExamId(exams) {
+  const params = new URLSearchParams(window.location.search);
+  const fromUrl = (params.get("exam") ?? "").trim();
+  if (fromUrl && findExamById(exams, fromUrl)) return fromUrl;
+
+  const fromLs = (localStorage.getItem(LS_SELECTED_EXAM) ?? "").trim();
+  if (fromLs && findExamById(exams, fromLs)) return fromLs;
+
+  return exams[0]?.id ?? "";
+}
+
+function renderExamSelect(exams, selectedId) {
+  if (!els.examSelect) return;
+
+  els.examSelect.innerHTML = "";
+  if (!Array.isArray(exams) || exams.length === 0) {
+    const opt = document.createElement("option");
+    opt.value = "";
+    opt.textContent = "Chưa có đề";
+    els.examSelect.appendChild(opt);
+    els.examSelect.disabled = true;
+    return;
+  }
+
+  for (const ex of exams) {
+    const opt = document.createElement("option");
+    opt.value = ex.id;
+    opt.textContent = ex.source === "custom" ? `${ex.title} (Import)` : ex.title;
+    els.examSelect.appendChild(opt);
+  }
+
+  const pick = findExamById(exams, selectedId) ? selectedId : exams[0].id;
+  els.examSelect.value = pick;
+  els.examSelect.disabled = false;
+}
+
+function setActiveExamById(id) {
+  const ex = findExamById(availableExams, id) ?? null;
+  activeExam = ex;
+
+  if (els.examSelect && ex) els.examSelect.value = ex.id;
+  if (ex) localStorage.setItem(LS_SELECTED_EXAM, ex.id);
+
+  renderHome();
 }
 
 function formatMeta(exam) {
@@ -142,11 +203,15 @@ function renderHome() {
   if (!activeExam) {
     els.examTitle.textContent = "Chưa có đề";
     if (els.examDesc) els.examDesc.textContent = "";
+    if (els.examHelp) els.examHelp.textContent = "";
+    if (els.examSelect) els.examSelect.disabled = true;
     els.startBtn.disabled = true;
     return;
   }
+  if (els.examSelect) els.examSelect.disabled = false;
   els.examTitle.textContent = activeExam.title;
   if (els.examDesc) els.examDesc.textContent = "";
+  if (els.examHelp) els.examHelp.textContent = formatMeta(activeExam);
   els.startBtn.disabled = false;
 }
 
@@ -360,6 +425,11 @@ function bindEvents() {
     if (e.key === "Enter") startExam();
   });
 
+  if (els.examSelect) {
+    els.examSelect.addEventListener("change", () => setActiveExamById(els.examSelect.value));
+  }
+
+
   els.qnav.addEventListener("click", (e) => {
     const btn = e.target.closest("button[data-action='jump']");
     if (!btn) return;
@@ -403,8 +473,10 @@ function bindEvents() {
 
 async function boot() {
   const [bundled, custom] = await Promise.all([loadBundledExams(), Promise.resolve(getCustomExams())]);
-  activeExam = getActiveExam(bundled, custom);
-  renderHome();
+  availableExams = buildAvailableExams(bundled, custom);
+  const initialId = getInitialExamId(availableExams);
+  renderExamSelect(availableExams, initialId);
+  setActiveExamById(initialId);
   showOnly(els.home);
 }
 

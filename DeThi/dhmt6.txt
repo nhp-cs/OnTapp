@@ -1,0 +1,1017 @@
+Cấu trúc cây phân chia không gian nhị phân (BSP Trees) tối ưu hóa pipeline đồ họa thông qua cơ chế nào?
+
+Question 1Select one:
+
+A.
+Tính toán độ rọi của các nguồn sáng điểm lên từng bề mặt đa giác lồi trong không gian cảnh.
+
+
+B.
+Xác định thứ tự vẽ các vật thể từ sau ra trước mà không cần phụ thuộc vào bộ đệm Z-buffer.
+
+
+C.
+Chia nhỏ các bề mặt tham số thành hàng ngàn tam giác để gia tốc quá trình Rasterization.
+
+
+D.
+Loại bỏ hoàn toàn các đa giác nằm ngoài mặt phẳng cắt xa của khối nhìn phối cảnh Frustum.
+
+
+Question 2
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Hiện tượng Z-fighting trong quá trình kết xuất 3D xảy ra do nguyên nhân kỹ thuật nào?
+
+Question 2Select one:
+
+A.
+Vượt quá giới hạn bộ nhớ phần cứng khi tải các tệp Texture có dung lượng quá lớn vào GPU.
+
+
+B.
+Vector pháp tuyến của vật thể bị đảo ngược hướng sau khi áp dụng phép biến đổi co giãn âm.
+
+
+C.
+Tốc độ khung hình vượt quá tần số quét vật lý của màn hình gây hiện tượng xé hình ảnh.
+
+
+D.
+Độ phân giải của bộ đệm Z-buffer không đủ để phân biệt hai đa giác nằm quá sát nhau.
+
+
+Question 3
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Việc chuyển tọa độ về hình lập phương đơn vị (Canonical View Volume) mang lại lợi ích gì trong Graphics Pipeline?
+
+Question 3Select one:
+
+A.
+Chuẩn hóa dải tọa độ về khoảng [-1, 1] giúp thuật toán Clipping hoạt động nhất quán.
+
+
+B.
+Khôi phục lại kích thước vật lý thực của vật thể bị biến dạng bởi phép chiếu phối cảnh.
+
+
+C.
+Loại bỏ sự phụ thuộc tính toán vào ma trận View Transform của thiết bị quan sát.
+
+
+D.
+Tự động nội suy mức độ chiếu sáng khuếch tán cho các đa giác lân cận trong Scene.
+
+
+Question 4
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Thao tác toán học nào có vai trò chuyển đổi toàn bộ không gian thế giới 3D sao cho Camera đóng vai trò là gốc tọa độ (0,0,0)
+ và nhìn dọc theo chiều âm của trục Z (Right-handed System)? [cite: 583, 584]
+
+Question 4Select one:
+
+A.
+Áp dụng Ma trận khung nhìn (Viewport Matrix) để quy chiếu tỷ lệ pixel [cite: 584]
+
+
+B.
+Nhân toàn bộ đỉnh với Ma trận mô hình (Model Matrix) để tịnh tiến vật thể [cite: 584]
+
+
+C.
+Áp dụng Ma trận chiếu phối cảnh (Perspective Matrix) để tạo độ sâu không gian [cite: 584]
+
+
+D.
+Nhân toàn bộ đỉnh với Ma trận quan sát (View Matrix) nghịch đảo từ biến đổi Camera [cite: 584]
+
+
+Question 5
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Điểm P(1,2,3,1)
+ trong không gian thuần nhất 3D được nhân với ma trận tịnh tiến có các tham số Tx=−1,Ty=2,Tz=−3
+. Tọa độ điểm P′
+ thu được là bao nhiêu?
+
+Question 5Select one:
+
+A.
+(2,0,6,1)
+
+
+B.
+(0,4,0,1)
+
+
+C.
+(0,4,0,0)
+
+
+D.
+(−1,4,−9,1)
+Thao tác chia tọa độ $[x, y, z]$ cho thành phần $w$ trong không gian thuần nhất mang ý nghĩa hình học gì?
+
+Question 6Select one:
+
+A.
+Đảm bảo tính nhất quán của các phép biến đổi xoay cục bộ quanh trục Z trong View Space.
+
+
+B.
+Đồng bộ hóa đơn vị đo lường khoảng cách từ hệ thống Pixel màn hình sang hệ thống Mét thực.
+
+
+C.
+Dịch chuyển gốc tọa độ không gian thế giới về vị trí đồng nhất với tâm của Camera quan sát.
+
+
+D.
+Thực hiện phép chiếu phối cảnh để tạo hiệu ứng thu nhỏ vật thể dựa trên chiều sâu không gian.
+
+
+Question 7
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Số lượng điểm điều khiển (Control Points) quyết định đặc tính toán học nào của đường cong Bézier?
+
+Question 7Select one:
+
+A.
+Bậc của đa thức Bernstein được sử dụng để nội suy hình dáng đường cong.
+
+
+B.
+Tỉ lệ co giãn đồng nhất của đường cong theo các trục tọa độ Descartes không gian.
+
+
+C.
+Số lượng phân đoạn đoạn thẳng rời rạc được hiển thị sau quá trình Rasterization.
+
+
+D.
+Kích thước của ma trận phép quay áp dụng lên toàn bộ tập hợp đỉnh cấu tạo đường cong.
+
+
+Question 8
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Trong mô hình chiếu sáng Phong, thành phần Ambient đại diện cho điều gì?
+
+Question 8Select one:
+
+A.
+Độ bóng của vật liệu phụ thuộc vào vị trí của người quan sát.
+
+
+B.
+Tia sáng trực tiếp từ nguồn sáng điểm tạo ra vùng sáng chói.
+
+
+C.
+Ánh sáng nền phản xạ từ môi trường lên mọi bề mặt vật thể.
+
+
+D.
+Sự tán xạ ánh sáng đồng đều khi va chạm với bề mặt thô ráp.
+
+
+Question 9
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Vai trò của các điểm điều khiển (Control Points) trong đường cong Bézier là gì?
+
+Question 9Select one:
+
+A.
+Xác định hình dáng và độ cong của đường thông qua đa thức Bernstein.
+
+
+B.
+Các điểm mà đường cong bắt buộc phải đi qua theo thứ tự.
+
+
+C.
+Các tham số dùng để tính toán độ dốc tại tâm của đường cong.
+
+
+D.
+Tập hợp các pixel dùng để hiển thị đường cong trên màn hình.
+
+
+Question 10
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Chức năng cốt lõi của các API đồ họa tiêu chuẩn (như OpenGL, DirectX, Vulkan) là gì?
+
+Question 10Select one:
+
+A.
+Trực tiếp biên dịch mã nguồn C++ thành các chuỗi tín hiệu xung điện điều khiển màn hình.
+
+
+B.
+Tự động tái cấu trúc lưới đa giác cho các mô hình nhân vật hoạt hình có độ phân giải cao.
+
+
+C.
+Cung cấp lớp giao tiếp phần mềm trừu tượng hóa để CPU ra lệnh điều khiển phần cứng GPU.
+
+
+D.
+Phân bổ và quản lý dung lượng ổ đĩa cứng để lưu trữ vĩnh viễn cấu trúc dữ liệu Point Cloud.
+Tại sao thuật toán DDA không được ưu tiên sử dụng trong các hệ thống phần cứng đồ họa nhúng?
+
+Question 11Select one:
+
+A.
+Phụ thuộc nhiều vào các phép toán số thực gây giảm hiệu suất xử lý của hệ thống.
+
+
+B.
+Chỉ hỗ trợ vẽ đường thẳng có độ dốc dương trong góc phần tư thứ nhất của hệ tọa độ.
+
+
+C.
+Không thể kết hợp với cơ chế khử răng cưa khi hiển thị trên màn hình độ phân giải thấp.
+
+
+D.
+Yêu cầu bộ nhớ đệm khung hình dung lượng gấp đôi so với các thuật toán quét dòng khác.
+
+
+Question 12
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Tính liên tục $C^1$ tại điểm nối giữa hai phân đoạn của đường cong ghép (Spline) thể hiện điều kiện toán học nào?
+
+Question 12Select one:
+
+A.
+Vector đạo hàm bậc hai tại điểm nối bằng không, tạo ra sự mượt mà tuyệt đối về độ cong.
+
+
+B.
+Hai vector tiếp tuyến tại điểm nối có sự đồng nhất hoàn toàn về cả phương, chiều và độ lớn.
+
+
+C.
+Đường cong tự động xoay quanh điểm nối tạo thành một quỹ đạo vòng lặp kín hoàn hảo.
+
+
+D.
+Hai phân đoạn có chung một điểm nối duy nhất nhưng góc tiếp tuyến bị gãy khúc đột ngột.
+
+
+Question 13
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Về mặt giải tích không gian, hàm mặt ẩn f(x,y,z)>0
+ ảnh hưởng thế nào đến quyết định xử lý của thuật toán phát hiện va chạm?
+
+Question 13Select one:
+
+A.
+Phản ánh trạng thái điểm đang di chuyển ra xa khỏi vùng phủ sáng của Spotlight
+
+
+B.
+Chỉ ra điểm bị che khuất hoàn toàn bởi các đa giác nằm gần Viewport hơn
+
+
+C.
+Xác nhận điểm kiểm tra nằm ngoài lớp vỏ hình học bề mặt của đối tượng 3D
+
+
+D.
+Định vị điểm rơi chính xác trên mặt phẳng giới hạn của vật thể cần hiển thị
+
+
+Question 14
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Khi thiết kế hệ thống Scene Graph cho Game Engine, để kết hợp hàng loạt các phép biến đổi (Tịnh tiến, Xoay, Co giãn) thành một phép nhân duy nhất, cấu trúc toán học nào là giải pháp bắt buộc? [cite: 551]
+
+Question 14Select one:
+
+A.
+Ma trận thuần nhất (Homogeneous Coordinates) kích thước 3x3 hoặc 4x4 [cite: 552]
+
+
+B.
+Ma trận Descartes (Cartesian Matrix) kích thước 2x2 hoặc 3x3 [cite: 552]
+
+
+C.
+Hệ phương trình tuyến tính đa biến phức tạp [cite: 552]
+
+
+D.
+Vector tham số với các thành phần độc lập trong không gian [cite: 552]
+
+
+Question 15
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Sau phép chiếu phối cảnh, một đỉnh có tọa độ trong không gian Clip Space là Pclip(4,6,2,2)
+. Tọa độ của đỉnh này trong không gian chuẩn hóa NDC là bao nhiêu?
+
+Question 15Select one:
+
+A.
+(4,6,2)
+
+
+B.
+(2,3,1)
+
+
+C.
+(0.5,0.33,1)
+
+
+D.
+(8,12,4)
+Đặc điểm quan trọng nhất của thuật toán Bresenham so với thuật toán DDA là gì?
+
+Question 16Select one:
+
+A.
+Chỉ sử dụng các phép toán trên số nguyên để tăng tốc độ xử lý.
+
+
+B.
+Luôn chọn điểm ảnh nằm chính xác trên đường thẳng lý thuyết.
+
+
+C.
+Có khả năng vẽ được các đường cong bậc cao phức tạp.
+
+
+D.
+Không phụ thuộc vào độ dốc của đường thẳng cần vẽ.
+
+
+Question 17
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Việc ánh xạ tọa độ 2D (x, y) thành chỉ số 1D trong Frame Buffer tuyến tính phụ thuộc vào thông số kỹ thuật nào?
+
+Question 17Select one:
+
+A.
+Tần số làm mới (Refresh Rate) của thiết bị đầu ra xuất tín hiệu tín hiệu video quang học.
+
+
+B.
+Kích thước chiều rộng (Width) của màn hình hiển thị hoặc độ phân giải của bộ đệm.
+
+
+C.
+Giá trị chiều sâu cực đại (Z-max) được cấu hình trong khối nhìn hình chóp cụt Frustum.
+
+
+D.
+Số lượng bit màu sắc (Color Depth) được sử dụng để mã hóa từng điểm ảnh đơn lẻ.
+
+
+Question 18
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Cho một cửa sổ cắt (Clipping Window) có Xmin=10,Xmax=50,Ymin=10,Ymax=50
+. Điểm P(60,30)
+ sẽ có mã vùng Cohen-Sutherland (Outcode) là bao nhiêu?
+
+Question 18Select one:
+
+A.
+0100
+
+
+B.
+1000
+
+
+C.
+0010
+
+
+D.
+0001
+
+
+Question 19
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Phân biệt đặc tính kỹ thuật cốt lõi giữa đồ họa Vector và đồ họa Raster?
+
+Question 19Select one:
+
+A.
+Vector lưu trữ đối tượng bằng phương trình toán học, Raster lưu ma trận điểm ảnh.
+
+
+B.
+Vector phụ thuộc trực tiếp vào độ phân giải thiết bị, Raster giữ nguyên độ nét khi phóng to.
+
+
+C.
+Vector sử dụng cấu trúc lưới Voxel ba chiều, Raster sử dụng cấu trúc phân cấp đa giác.
+
+
+D.
+Vector yêu cầu dung lượng lưu trữ lớn hơn Raster khi xử lý các bề mặt có độ phức tạp cao.
+
+
+Question 20
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Hiện tượng mất bậc tự do (Gimbal Lock) trong biến đổi 3D là hệ quả trực tiếp của phương pháp biểu diễn nào?
+
+Question 20Select one:
+
+A.
+Tính toán tích có hướng của hai vector mà trong đó có một vector sở hữu độ lớn bằng không.
+
+
+B.
+Áp dụng toán học Quaternion khi thực hiện nội suy xoay tuyến tính giữa các khung hình liên tiếp.
+
+
+C.
+Sử dụng ma trận tọa độ thuần nhất 4x4 khi hệ số tịnh tiến vượt quá bộ nhớ phần cứng lưu trữ.
+
+
+D.
+Sử dụng góc quay Euler tuần tự gây ra sự trùng lặp và khóa cứng giữa hai trục quay không gian.
+Thao tác Perspective Division (Chia phối cảnh) biến đổi tọa độ không gian thuần nhất về chuẩn nào?
+
+Question 21Select one:
+
+A.
+Nhân các thành phần x, y, z với w để khôi phục lại tỷ lệ kích thước gốc của đối tượng.
+
+
+B.
+Cộng thành phần w vào bộ đệm Z-buffer để xác định thứ tự ưu tiên hiển thị đa giác.
+
+
+C.
+Trừ giá trị w khỏi các tham số tọa độ để loại bỏ hiệu ứng biến dạng của thấu kính camera.
+
+
+D.
+Chia các thành phần x, y, z cho w để đưa tọa độ về không gian thiết bị chuẩn NDC.
+
+
+Question 22
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Khi triển khai thuật toán vẽ đường tròn trên phần cứng nhúng không tích hợp bộ xử lý dấu phẩy động (FPU - Floating Point Unit), giải pháp Rasterization nào đảm bảo hiệu năng và tính khả thi cao nhất? [cite: 567]
+
+Question 22Select one:
+
+A.
+Kỹ thuật nội suy góc quay bằng ma trận lượng giác xấp xỉ [cite: 568]
+
+
+B.
+Thuật toán DDA biến thể sử dụng cấu trúc dữ liệu dấu phẩy tĩnh (Fixed-point) [cite: 568]
+
+
+C.
+Kỹ thuật chia nhỏ đường tròn thành đa giác đều với hàng ngàn cạnh [cite: 568]
+
+
+D.
+Thuật toán Midpoint Circle với các phép toán cộng trừ số nguyên và dịch bit [cite: 568]
+
+
+Question 23
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Cơ chế 8-Way Symmetry trong thuật toán vẽ đường tròn giúp tối ưu hóa điều gì?
+
+Question 23Select one:
+
+A.
+Giảm 7/8 khối lượng tính toán bằng cách lấy đối xứng tọa độ.
+
+
+B.
+Cho phép vẽ các hình ellipse có độ lệch trục lớn.
+
+
+C.
+Đảm bảo đường tròn luôn đi qua các điểm ảnh có tọa độ nguyên.
+
+
+D.
+Tăng độ mịn của đường tròn khi hiển thị ở độ phân giải thấp.
+
+
+Question 24
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Trong mô hình chiếu sáng cục bộ Phong, việc điều chỉnh tăng hệ số độ bóng (Shininess exponent) tác động như thế nào đến vùng sáng phản xạ gương (Specular highlight)?
+
+Question 24Select one:
+
+A.
+Thay đổi màu sắc của nguồn sáng môi trường xung quanh thành dải phổ quang học
+
+
+B.
+Chuyển đổi cơ chế phản xạ khuếch tán thành hiện tượng phản xạ hoàn toàn vô hướng
+
+
+C.
+Mở rộng kích thước vùng sáng bao phủ toàn bộ đa giác theo mô hình nội suy đỉnh
+
+
+D.
+Làm cho vùng sáng phản xạ gương hội tụ nhỏ lại và trở nên sắc nét hơn trên bề mặt
+
+
+Question 25
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Cho vector pháp tuyến tại đỉnh N(0.6,0.8,0)
+. Để vector này có thể sử dụng chính xác trong tính toán ánh sáng, kết quả của phép chuẩn hóa (Normalize) vector N
+ là:
+
+Question 25Select one:
+
+A.
+(0.6,0.8,0)
+
+
+B.
+(1,1,0)
+
+
+C.
+(0,1,0)
+
+
+D.
+(0.36,0.64,0)
+Phân tích tác động của thành phần Ambient Light trong phương trình chiếu sáng Phong, điều gì xảy ra nếu giá trị này bị loại bỏ?
+
+Question 26Select one:
+
+A.
+Kết xuất cuối cùng bị giới hạn dải màu thành một hình ảnh đơn sắc thang độ xám
+
+
+B.
+Các tia sáng khuếch tán sẽ liên tục bật nảy qua lại giữa các mặt phẳng giới hạn
+
+
+C.
+Vùng phản xạ gương sẽ tự động lan rộng và che lấp các chi tiết của bản đồ pháp tuyến
+
+
+D.
+Toàn bộ các vùng khuất bóng trên bề mặt mô hình sẽ trở thành màu đen hoàn toàn
+
+
+Question 27
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Trong cấu trúc Scene Graph, ma trận biến đổi cục bộ (Local Transform Matrix) của một nút mô tả dữ liệu gì?
+
+Question 27Select one:
+
+A.
+Tọa độ điểm ảnh cuối cùng của đối tượng hiển thị trên màn hình sau quá trình Viewport Transform.
+
+
+B.
+Vị trí, tỷ lệ và góc xoay tương đối của đối tượng đó so với hệ tọa độ của nút cha trực tiếp.
+
+
+C.
+Mức độ ưu tiên về cường độ sáng khuếch tán khi đối tượng tương tác với nguồn sáng điểm cục bộ.
+
+
+D.
+Vị trí tuyệt đối của các đỉnh cấu trúc mô hình lưới khi ánh xạ vào không gian thế giới World Space.
+
+
+Question 28
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Để tối ưu hóa quá trình xác định thứ tự vẽ (Visibility Ordering) và kiểm tra va chạm (Collision Detection) trong các Game Engine không gian hẹp, cấu trúc dữ liệu nào nên được tích hợp? [cite: 554]
+
+Question 28Select one:
+
+A.
+Lưới đa giác Polygon Meshes với hàng triệu tam giác [cite: 555]
+
+
+B.
+Đám mây điểm Point Cloud thu thập từ máy quét 3D [cite: 555]
+
+
+C.
+Mô hình hình học cấu trúc đặc CSG (Constructive Solid Geometry) [cite: 555]
+
+
+D.
+Cây phân chia không gian nhị phân BSP Trees [cite: 555]
+
+
+Question 29
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Sự đánh đổi lớn nhất về cấu trúc hệ thống khi tích hợp kỹ thuật Mipmapping nhằm chống răng cưa cho Texture là gì?
+
+Question 29Select one:
+
+A.
+Ép buộc đồ thị cảnh (Scene Graph) vô hiệu hóa bộ đệm chiều sâu để giành quyền ưu tiên cấp phát
+
+
+B.
+Giảm thiểu băng thông truyền tải dữ liệu trên bus do hệ thống phải lấy mẫu lại bản đồ pháp tuyến
+
+
+C.
+Tiêu thụ thêm khoảng một phần ba dung lượng bộ nhớ lưu trữ cho chuỗi ảnh phân giải thấp dần
+
+
+D.
+Kéo dài thời gian khởi tạo ma trận xoay trong giai đoạn chuyển đổi hệ quy chiếu của Graphic Pipeline
+
+
+Question 30
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Trong thuật toán Bresenham vẽ đường thẳng có độ dốc 0<m<1
+, nếu điểm hiện tại là (xi,yi)
+ và giá trị quyết định pi<0
+, điểm kế tiếp (xi+1,yi+1)
+ được lựa chọn là gì?
+
+Question 30Select one:
+
+A.
+(xi,yi+1)
+
+
+B.
+(xi+1,yi)
+
+
+C.
+(xi−1,yi)
+
+
+D.
+(xi+1,yi+1)
+Trong Perspective Projection, nếu một điểm P(x,y,z)
+ được chiếu lên mặt phẳng z=d
+, tọa độ xproj
+ trên màn hình được tính theo công thức nào?
+
+Question 31Select one:
+
+A.
+x−z
+
+
+B.
+x⋅z/d
+
+
+C.
+x/d
+
+
+D.
+x⋅d/z
+
+
+Question 32
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Cơ chế làm tròn số thực thành số nguyên trong thuật toán DDA gây ra hệ quả trực tiếp nào?
+
+Question 32Select one:
+
+A.
+Làm giảm tốc độ thực thi tổng thể do tiêu tốn tài nguyên hệ thống cho phép toán số thực.
+
+
+B.
+Khử hoàn toàn hiệu ứng răng cưa Aliasing trên các đoạn thẳng có độ dốc chéo bất kỳ.
+
+
+C.
+Nâng cao độ chính xác nội suy tọa độ tuyệt đối so với thuật toán vẽ đường Bresenham.
+
+
+D.
+Sinh ra lỗi chia cho không tuyệt đối khi đoạn thẳng cần vẽ nằm song song với trục tung.
+
+
+Question 33
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Sử dụng thuật toán Bresenham vẽ đoạn thẳng với Δx=10
+, Δy=4
+. Nếu giá trị quyết định hiện tại pi>0
+, giá trị quyết định kế tiếp pi+1
+ được tính theo công thức nào?
+
+Question 33Select one:
+
+A.
+pi+2Δx−2Δy
+
+
+B.
+pi+2Δy−2Δx
+
+
+C.
+pi+2Δy
+
+
+D.
+pi+2Δy+2Δx
+
+
+Question 34
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Mục tiêu chính của giai đoạn Rasterization trong quy trình đồ họa là gì?
+
+Question 34Select one:
+
+A.
+Tính toán giá trị chiếu sáng tại các đỉnh của đa giác.
+
+
+B.
+Chuyển đổi mô tả hình học toán học sang tập hợp các điểm ảnh.
+
+
+C.
+Loại bỏ các vật thể nằm ngoài vùng quan sát của camera.
+
+
+D.
+Sắp xếp thứ tự hiển thị của các đối tượng từ xa đến gần.
+
+
+Question 35
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Trong thuật toán Bresenham vẽ đường tròn bán kính R=8
+, giá trị tham số quyết định ban đầu p0
+ được tính bằng bao nhiêu?
+
+Question 35Select one:
+
+A.
+5/4−R=−6.75
+
+
+B.
+1−R=−7
+
+
+C.
+R−3=5
+
+
+D.
+3 - 2R = -13
+Trong quy trình xử lý đồ họa (Graphics Pipeline), giải pháp tối ưu để giảm tải cho CPU khi vẽ hàng triệu đa giác là gì? [cite: 545]
+
+Question 36Select one:
+
+A.
+CPU thực hiện toàn bộ quá trình biến đổi đỉnh và phép chiếu [cite: 546]
+
+
+B.
+CPU đảm nhiệm việc nội suy ánh sáng cho từng Pixel [cite: 546]
+
+
+C.
+CPU chuẩn bị dữ liệu và gửi lệnh vẽ xuống GPU để xử lý song song [cite: 546]
+
+
+D.
+CPU trực tiếp chia đa giác thành các mảnh nhỏ Fragments [cite: 546]
+
+
+Question 37
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Trong thuật toán Midpoint vẽ đường tròn, tại bước k
+, điểm hiện tại là (0,10)
+ và tham số quyết định pk<0
+. Tọa độ điểm tiếp theo (xk+1,yk+1)
+ được chọn là điểm nào?
+
+Question 37Select one:
+
+A.
+(2,10)
+
+
+B.
+(1,9)
+
+
+C.
+(0,9)
+
+
+D.
+(1,10)
+
+
+Question 38
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Một Frame Buffer có độ phân giải 1920×1080
+, sử dụng định dạng màu RGBA (4 bytes cho mỗi pixel). Dung lượng bộ nhớ tối thiểu cần thiết để lưu trữ một khung hình là bao nhiêu?
+
+Question 38Select one:
+
+A.
+6,220,800
+ bytes
+
+
+B.
+16,588,800
+ bytes
+
+
+C.
+2,073,600
+ bytes
+
+
+D.
+8,294,400
+ bytes
+
+
+Question 39
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Sự khác biệt cấu trúc giữa Topology (Cấu trúc liên kết) và Geometry (Hình học) trong mô hình Polygon Mesh là gì?
+
+Question 39Select one:
+
+A.
+Topology mô tả cách các đỉnh nối với nhau tạo thành mặt, Geometry chứa tọa độ không gian.
+
+
+B.
+Topology lưu trữ thông tin cường độ ánh sáng, Geometry lưu trữ tham số vân bề mặt vật liệu.
+
+
+C.
+Topology quy định phương pháp biến đổi Affine, Geometry tính toán ma trận phép chiếu 3D.
+
+
+D.
+Topology biểu diễn phương trình mặt cong tham số, Geometry biểu diễn tập hợp điểm rời rạc.
+
+
+Question 40
+Not yet answered
+Marked out of 1.0
+Flag question
+Question text
+Mối liên hệ logic giữa các phép biến đổi Affine khi xoay một đối tượng 2D quanh một điểm bất kỳ là gì?
+
+Question 40Select one:
+
+A.
+Tính toán hệ số ma trận nghịch đảo để loại bỏ sự phụ thuộc vào gốc tọa độ màn hình
+
+
+B.
+Tích lũy trực tiếp góc xoay vào ma trận thay đổi tỷ lệ trước khi áp dụng phép tịnh tiến
+
+
+C.
+Phải dời gốc tọa độ về điểm xoay, thực hiện phép xoay, sau đó tịnh tiến trở lại vị trí cũ
+
+
+D.
+Ánh xạ trực tiếp đa giác vào không gian màn hình trước khi nhân với ma trận xoay
+Đáp án:
+B
+D
+A
+D
+B
+D
+A
+C
+A
+C
+A
+B
+C
+A
+B
+A
+B
+B
+A
+D
+D
+D
+A
+D
+A
+D
+B
+D
+C
+B
+D
+A
+B
+B
+D
+C
+D
+D
+A
+C

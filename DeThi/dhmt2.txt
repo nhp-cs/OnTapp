@@ -1,0 +1,1009 @@
+Cơ chế Programmable Pipeline trong GPU hiện đại cho phép điều gì?
+
+Câu hỏi 1Select one:
+
+A.
+Viết mã tùy chỉnh (Shaders) để can thiệp vào quá trình xử lý.
+
+
+B.
+Loại bỏ hoàn toàn sự phụ thuộc vào các thư viện như OpenGL.
+
+
+C.
+Thay đổi cấu trúc phần cứng của chip đồ họa một cách trực tiếp.
+
+
+D.
+Tự động chuyển đổi từ đồ họa Vector sang đồ họa Raster.
+
+
+Câu hỏi 2
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Kỹ thuật Ambient Occlusion trong đồ họa hiện đại mô phỏng hiện tượng vật lý tự nhiên nào?
+
+Câu hỏi 2Select one:
+
+A.
+Hiện tượng phản xạ chéo màu sắc qua lại giữa các vật thể nằm cạnh nhau trong không gian kín.
+
+
+B.
+Sự tán sắc ánh sáng trắng thành cầu vồng đa sắc khi đi qua các bề mặt thủy tinh lăng kính.
+
+
+C.
+Sự suy giảm cường độ ánh sáng môi trường khuếch tán tại các rãnh sâu hoặc góc kẹt bề mặt.
+
+
+D.
+Hiện tượng chói lóa mắt khi Camera nhìn trực diện vào nguồn sáng định hướng có cường độ mạnh.
+
+
+Câu hỏi 3
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Cho điểm P(2,3)
+ trong hệ tọa độ 2D. Thực hiện phép quay điểm P
+ một góc 90∘
+ ngược chiều kim đồng hồ quanh gốc tọa độ O(0,0)
+. Tọa độ mới của điểm P′
+ là:
+
+Câu hỏi 3Select one:
+
+A.
+(−2,3)
+
+
+B.
+(3,−2)
+
+
+C.
+(−3,2)
+
+
+D.
+(3,2)
+
+
+Câu hỏi 4
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Khi cần giả lập độ sâu chân thực của các khe nứt trên bức tường gạch sao cho chúng có thể thực sự che khuất (Occlude) lẫn nhau khi thay đổi góc nhìn Camera, kỹ thuật Mapping cấp cao nào bắt buộc phải được áp dụng? [cite: 580, 581]
+
+Câu hỏi 4Select one:
+
+A.
+Normal Mapping tinh chỉnh hướng của vector pháp tuyến trên mặt phẳng [cite: 581]
+
+
+B.
+Displacement Mapping làm biến đổi vị trí hình học thực tế của các đỉnh [cite: 581]
+
+
+C.
+Diffuse Mapping sử dụng ảnh kết cấu có nướng sẵn hiệu ứng đổ bóng [cite: 581]
+
+
+D.
+Parallax Mapping tạo ảo giác dịch chuyển tọa độ UV theo góc nhìn [cite: 581]
+
+
+Câu hỏi 5
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Sự khác biệt chính giữa Illumination Model và Shading Model là gì?
+
+Câu hỏi 5Select one:
+
+A.
+Illumination tính toán cường độ sáng tại một điểm, còn Shading nội suy màu sắc cho toàn bộ bề mặt.
+
+
+B.
+Illumination yêu cầu ánh sáng môi trường cục bộ, còn Shading chỉ dùng ánh sáng khuếch tán.
+
+
+C.
+Illumination xử lý đổ bóng giữa các vật thể, còn Shading chỉ tạo độ tương phản trên đa giác.
+
+
+D.
+Illumination áp dụng cho bề mặt cong tham số, còn Shading áp dụng riêng cho lưới rời rạc.
+Khi mô phỏng hiện tượng ánh sáng Mặt Trời chiếu sáng đồng đều một cảnh quan không gian ngoài trời rộng lớn, loại nguồn sáng nào là lựa chọn tối ưu về chi phí tính toán GPU? [cite: 561]
+
+Câu hỏi 6Select one:
+
+A.
+Nguồn sáng điểm (Point Light) tỏa ra mọi hướng từ một tọa độ cố định [cite: 562]
+
+
+B.
+Nguồn sáng môi trường (Ambient Light) tính toán theo thuật toán Phong [cite: 562]
+
+
+C.
+Nguồn sáng định hướng (Directional Light) có vector hướng sáng không đổi [cite: 562]
+
+
+D.
+Nguồn sáng tụ (Spotlight) giới hạn phạm vi chiếu sáng theo hình nón [cite: 562]
+
+
+Câu hỏi 7
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Bộ lọc Nearest Neighbor trong Texture Mapping gây ra hiện tượng trực quan nào khi phóng to bề mặt đối tượng?
+
+Câu hỏi 7Select one:
+
+A.
+Làm mờ nhòe toàn bộ chi tiết bề mặt do quá trình nội suy tuyến tính các điểm ảnh lân cận.
+
+
+B.
+Hiển thị các khối màu vuông vức rời rạc tạo thành hiệu ứng răng cưa rõ rệt trên kết cấu.
+
+
+C.
+Biến dạng tỉ lệ vân bề mặt theo hướng song song với vector hướng nhìn của camera quan sát.
+
+
+D.
+Sinh ra các quầng sáng ảo bao quanh ranh giới giữa các vùng vật liệu có độ tương phản cao.
+
+
+Câu hỏi 8
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Điểm khác biệt chính giữa Gouraud Shading và Phong Shading là gì?
+
+Câu hỏi 8Select one:
+
+A.
+Phong Shading chỉ tính toán ánh sáng tại các đỉnh của đa giác.
+
+
+B.
+Phong Shading nội suy vector pháp tuyến để tính sáng tại từng pixel.
+
+
+C.
+Gouraud Shading yêu cầu chi phí tính toán cao hơn trên GPU.
+
+
+D.
+Gouraud Shading mang lại chất lượng hình ảnh chân thực hơn.
+
+
+Câu hỏi 9
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Một đường cong Bézier bậc 2 có các điểm kiểm soát P0(0,0),P1(4,8),P2(8,0)
+. Tại tham số t=0.25
+, tọa độ của điểm trên đường cong là bao nhiêu?
+
+Câu hỏi 9Select one:
+
+A.
+(3,2)
+
+
+B.
+(2,3)
+
+
+C.
+(4,4)
+
+
+D.
+(2,4)
+
+
+Câu hỏi 10
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Cho đoạn thẳng có điểm đầu A(2,3)
+ và điểm cuối B(8,7)
+. Giá trị của tham số quyết định ban đầu p0
+ trong thuật toán Bresenham là bao nhiêu?
+
+Câu hỏi 10Select one:
+
+A.
+2Δy−2Δx=−4
+
+
+B.
+Δy/Δx=0.67
+
+
+C.
+2Δy=8
+
+
+D.
+2Δy−Δx=2
+Tại sao kỹ thuật Flat Shading lại thường xuyên gây ra hiệu ứng dải màu (Mach band effect) làm giảm độ chân thực của mô hình 3D?
+
+Câu hỏi 11Select one:
+
+A.
+Do độ nhạy cảm của thị giác con người với sự chênh lệch độ sáng đột ngột tại ranh giới các đa giác phẳng
+
+
+B.
+Do thiếu sót dữ liệu tương phản giữa bản đồ độ cao (Height Map) và bộ đệm màu tổng hợp
+
+
+C.
+Do sự phân tách màu sắc của nguồn sáng Spotlight tại biên của nón ánh sáng trong hệ tọa độ cực
+
+
+D.
+Do hiện tượng tràn bộ đệm khi nội suy giá trị tọa độ kết cấu UV vượt ranh giới lưới tam giác
+
+
+Câu hỏi 12
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Điểm khác biệt mấu chốt giữa thuật toán DDA và Bresenham trong vẽ đường thẳng 2D là gì?
+
+Câu hỏi 12Select one:
+
+A.
+Bresenham chỉ sử dụng phép toán cộng trừ số nguyên, trong khi DDA phụ thuộc vào số thực và làm tròn.
+
+
+B.
+Bresenham hoạt động song song trên GPU, trong khi DDA bắt buộc phải thực thi tuần tự trên CPU.
+
+
+C.
+Bresenham chỉ hỗ trợ các đường thẳng có hệ số góc dương, trong khi DDA vẽ được mọi góc độ độ dốc.
+
+
+D.
+Bresenham tự động khử răng cưa cho nét vẽ, trong khi DDA giữ nguyên các khuyết điểm pixel khối.
+
+
+Câu hỏi 13
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Trong quá trình xử lý hình học, việc cấu trúc cây BSP (Binary Space Partitioning) được tối ưu hóa ảnh hưởng thế nào đến thuật toán Painter's Algorithm?
+
+Câu hỏi 13Select one:
+
+A.
+Đảm bảo cường độ ánh sáng môi trường lan tỏa đều đặn lên tất cả các bề mặt
+
+
+B.
+Cung cấp thứ tự hiển thị chính xác từ sau ra trước mà không cần dùng Z-buffer
+
+
+C.
+Tự động tính toán lại ma trận chiếu phối cảnh tại từng nút lá của đồ thị cây
+
+
+D.
+Làm mịn trực tiếp các đường biên răng cưa của đa giác trong không gian 3D
+
+
+Câu hỏi 14
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Trong phép chiếu phối cảnh (Perspective Projection), mặt phẳng chiếu được đặt tại z=2
+. Một điểm P(6,4,4)
+ sau khi chiếu sẽ có tọa độ (x′,y′)
+ trên mặt phẳng chiếu là bao nhiêu?
+
+Câu hỏi 14Select one:
+
+A.
+(1.5,1)
+
+
+B.
+(6,4)
+
+
+C.
+(12,8)
+
+
+D.
+(3,2)
+
+
+Câu hỏi 15
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Trong hệ tọa độ màn hình (Screen Space), quy ước hướng của trục Y thường như thế nào?
+
+Câu hỏi 15Select one:
+
+A.
+Hướng xuống dưới từ góc trên bên trái màn hình.
+
+
+B.
+Hướng về phía người quan sát theo quy tắc bàn tay phải.
+
+
+C.
+Hướng lên trên từ góc dưới bên trái màn hình.
+
+
+D.
+Hướng sang phải từ tâm của màn hình hiển thị.
+Trong kỹ thuật Texture Mapping, nếu một tam giác có tọa độ UV tại các đỉnh là (0,0),(1,0),(0,1)
+, điểm trọng tâm của tam giác này sẽ có tọa độ UV tương ứng là:
+
+Câu hỏi 16Select one:
+
+A.
+(0.5,0.5)
+
+
+B.
+(1/3,1/3)
+
+
+C.
+(1,1)
+
+
+D.
+(0,0)
+
+
+Câu hỏi 17
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Khuyết điểm phân tích hình học nào khiến kỹ thuật Gouraud Shading thất bại trong việc mô phỏng chi tiết vùng sáng lóa (Specular Highlight)?
+
+Câu hỏi 17Select one:
+
+A.
+Chỉ số độ bóng đặc trưng của vật liệu bị làm tròn xuống mức thấp nhất khi tính toán song tuyến tính
+
+
+B.
+Các giá trị chiếu sáng lóa có thể rơi vào vùng giữa đa giác nhưng bị bỏ sót do thuật toán chỉ nội suy từ đỉnh
+
+
+C.
+Toàn bộ các vector pháp tuyến bị ép về cấu trúc đồng phẳng gây triệt tiêu hệ số phản xạ gương
+
+
+D.
+Thuật toán chỉ tập trung nội suy thành phần ánh sáng môi trường thay vì tính toán nguồn định hướng
+
+
+Câu hỏi 18
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Kỹ thuật Back-face Culling được sử dụng trong Graphics Pipeline nhằm mục đích gì?
+
+Câu hỏi 18Select one:
+
+A.
+Chia nhỏ các đa giác lớn thành các tam giác để dễ xử lý.
+
+
+B.
+Giảm độ phân giải của các vật thể ở quá xa người quan sát.
+
+
+C.
+Loại bỏ các đa giác hướng mặt về phía ngược với camera.
+
+
+D.
+Kiểm tra sự che khuất giữa các vật thể khác nhau trong cảnh.
+
+
+Câu hỏi 19
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Xét về kiến trúc phần cứng, lý do cốt lõi nào khiến GPU vượt trội hoàn toàn so với CPU trong việc tăng tốc độ thực thi thuật toán Rasterization cho hàng triệu tam giác độc lập? [cite: 585, 586]
+
+Câu hỏi 19Select one:
+
+A.
+GPU được tối ưu hóa khả năng dự đoán rẽ nhánh điều kiện (Branch Prediction) [cite: 587]
+
+
+B.
+GPU hoạt động ở mức xung nhịp (Clock Speed) vật lý cao gấp nhiều lần so với CPU [cite: 587]
+
+
+C.
+GPU sở hữu hàng ngàn lõi tính toán song song xử lý luồng dữ liệu đơn (SIMD/SIMT) [cite: 587]
+
+
+D.
+GPU chia sẻ trực tiếp bộ nhớ Cache L1 với vi xử lý trung tâm triệt tiêu độ trễ [cite: 587]
+
+
+Câu hỏi 20
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Thao tác Perspective Division (Chia phối cảnh) biến đổi tọa độ không gian thuần nhất về chuẩn nào?
+
+Câu hỏi 20Select one:
+
+A.
+Cộng thành phần w vào bộ đệm Z-buffer để xác định thứ tự ưu tiên hiển thị đa giác.
+
+
+B.
+Trừ giá trị w khỏi các tham số tọa độ để loại bỏ hiệu ứng biến dạng của thấu kính camera.
+
+
+C.
+Chia các thành phần x, y, z cho w để đưa tọa độ về không gian thiết bị chuẩn NDC.
+
+
+D.
+Nhân các thành phần x, y, z với w để khôi phục lại tỷ lệ kích thước gốc của đối tượng.
+Cho đường cong Bézier bậc 2 với các điểm kiểm soát P0(0,0),P1(2,5),P2(6,0)
+. Vector tiếp tuyến của đường cong tại điểm cuối t=1
+ có giá trị bằng bao nhiêu?
+
+Câu hỏi 21Select one:
+
+A.
+(4,−5)
+
+
+B.
+(−4,5)
+
+
+C.
+(2,5)
+
+
+D.
+(8,−10)
+
+
+Câu hỏi 22
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Giá trị quyết định (Decision Parameter) trong thuật toán Midpoint dùng để làm gì?
+
+Câu hỏi 22Select one:
+
+A.
+Tính toán cường độ sáng tại các điểm nằm giữa hai đỉnh.
+
+
+B.
+Kiểm tra xem một vật thể có nằm trong Frustum hay không.
+
+
+C.
+Lựa chọn điểm ảnh tối ưu tiếp theo dựa trên vị trí trung điểm.
+
+
+D.
+Xác định độ dốc của đường thẳng để chọn giải thuật DDA.
+
+
+Câu hỏi 23
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Đặc điểm quan trọng nhất của thuật toán Bresenham so với thuật toán DDA là gì?
+
+Câu hỏi 23Select one:
+
+A.
+Không phụ thuộc vào độ dốc của đường thẳng cần vẽ.
+
+
+B.
+Luôn chọn điểm ảnh nằm chính xác trên đường thẳng lý thuyết.
+
+
+C.
+Chỉ sử dụng các phép toán trên số nguyên để tăng tốc độ xử lý.
+
+
+D.
+Có khả năng vẽ được các đường cong bậc cao phức tạp.
+
+
+Câu hỏi 24
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Việc chuyển tọa độ về hình lập phương đơn vị (Canonical View Volume) mang lại lợi ích gì trong Graphics Pipeline?
+
+Câu hỏi 24Select one:
+
+A.
+Loại bỏ sự phụ thuộc tính toán vào ma trận View Transform của thiết bị quan sát.
+
+
+B.
+Chuẩn hóa dải tọa độ về khoảng [-1, 1] giúp thuật toán Clipping hoạt động nhất quán.
+
+
+C.
+Tự động nội suy mức độ chiếu sáng khuếch tán cho các đa giác lân cận trong Scene.
+
+
+D.
+Khôi phục lại kích thước vật lý thực của vật thể bị biến dạng bởi phép chiếu phối cảnh.
+
+
+Câu hỏi 25
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Chức năng của thành phần w trong tọa độ thuần nhất $[x, y, z, w]$ khi thực hiện Projection là gì?
+
+Câu hỏi 25Select one:
+
+A.
+Tăng số chiều không gian để thực hiện phép quay quanh trục bất kỳ.
+
+
+B.
+Lưu trữ thông tin về độ trong suốt (Alpha) của điểm ảnh.
+
+
+C.
+Xác định vector pháp tuyến của mặt phẳng cắt phía gần.
+
+
+D.
+Dùng để thực hiện phép chia phối cảnh nhằm tạo độ sâu.
+Trong kỹ thuật Ray Casting, việc nhân tọa độ thiết bị chuẩn hóa (NDC) với ma trận nghịch đảo của (Projection * View) có ý nghĩa phân tích gì?
+
+Câu hỏi 26Select one:
+
+A.
+Ánh xạ điểm click trên màn hình 2D thành một tia chiếu trong không gian thế giới
+
+
+B.
+Lọc bỏ các đa giác không nhìn thấy thông qua thuật toán Back-face Culling
+
+
+C.
+Chuyển đổi trực tiếp vector pháp tuyến của mô hình sang bản đồ vân bề mặt
+
+
+D.
+Nội suy lại tọa độ các đỉnh của đa giác bị cắt xén tại mặt phẳng Near và Far
+
+
+Câu hỏi 27
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Thực hiện kết hợp hai phép biến đổi 2D: Tịnh tiến theo (2,2)
+ trước, sau đó co giãn với hệ số sx=2,sy=2
+. Ma trận tổng hợp cuối cùng trong hệ tọa độ thuần nhất là:
+
+Câu hỏi 27Select one:
+
+A.
+⎡⎣⎢200020441⎤⎦⎥
+
+
+B.
+⎡⎣⎢100010441⎤⎦⎥
+
+
+C.
+⎡⎣⎢200020221⎤⎦⎥
+
+
+D.
+⎡⎣⎢220220001⎤⎦⎥
+
+
+Câu hỏi 28
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Trong quy trình xử lý đồ họa hiện đại, Fragment Shader chịu trách nhiệm thực hiện công việc gì?
+
+Câu hỏi 28Select one:
+
+A.
+Thu thập và loại bỏ các đối tượng hình học nằm ngoài vùng nhìn phối cảnh của camera.
+
+
+B.
+Biến đổi ma trận tọa độ đỉnh từ không gian đối tượng sang không gian hiển thị chuẩn.
+
+
+C.
+Tái phân chia các đa giác lớn thành các tam giác cơ sở để tăng tốc Rasterization.
+
+
+D.
+Tô màu, áp dụng vân bề mặt và tính toán ánh sáng cho từng mảnh điểm ảnh rời rạc.
+
+
+Câu hỏi 29
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Việc ánh xạ tọa độ 2D (x, y) thành chỉ số 1D trong Frame Buffer tuyến tính phụ thuộc vào thông số kỹ thuật nào?
+
+Câu hỏi 29Select one:
+
+A.
+Kích thước chiều rộng (Width) của màn hình hiển thị hoặc độ phân giải của bộ đệm.
+
+
+B.
+Tần số làm mới (Refresh Rate) của thiết bị đầu ra xuất tín hiệu tín hiệu video quang học.
+
+
+C.
+Số lượng bit màu sắc (Color Depth) được sử dụng để mã hóa từng điểm ảnh đơn lẻ.
+
+
+D.
+Giá trị chiều sâu cực đại (Z-max) được cấu hình trong khối nhìn hình chóp cụt Frustum.
+
+
+Câu hỏi 30
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Khi xây dựng thuật toán vẽ đoạn thẳng trên hệ thống nhúng có năng lực tính toán dấu phẩy động (Floating-point) hạn chế, giải pháp Rasterization nào mang lại hiệu năng cao nhất? [cite: 546]
+
+Câu hỏi 30Select one:
+
+A.
+Thuật toán nội suy tuyến tính dựa trên phương trình tham số [cite: 547]
+
+
+B.
+Thuật toán quét dòng theo phương trình tường minh y=mx+b [cite: 547]
+
+
+C.
+Thuật toán DDA (Digital Differential Analyzer) với sai số tích lũy [cite: 547]
+
+
+D.
+Thuật toán Bresenham với các phép toán cộng trừ số nguyên [cite: 547]
+Tác động cấu trúc dữ liệu khi mặt phẳng cắt (Splitting Plane) của BSP Tree cắt ngang qua một đa giác là gì?
+
+Câu hỏi 31Select one:
+
+A.
+Chuyển đổi biểu diễn bề mặt của đa giác bị cắt thành một đám mây điểm (Point Cloud)
+
+
+B.
+Hủy bỏ quá trình Rasterization đối với phần đa giác nằm bên ngoài không gian nửa kín
+
+
+C.
+Tự động xoay mặt phẳng cắt vuông góc với vector pháp tuyến để tránh phân chia mảnh vỡ
+
+
+D.
+Tách đa giác thành hai mảnh nhỏ làm gia tăng số lượng nút và đỉnh trong cây phân cấp
+
+
+Câu hỏi 32
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Hạn chế lớn nhất của mô hình khối CSG khi ứng dụng trong đồ họa thời gian thực (Real-time Rendering) là gì?
+
+Câu hỏi 32Select one:
+
+A.
+Thường xuyên xuất hiện hiệu ứng răng cưa Aliasing ở biên vật thể khi thiết lập độ phân giải cao.
+
+
+B.
+Tốn kém nhiều tài nguyên để tính toán chuyển đổi thành bề mặt hiển thị lưới đa giác Tessellation.
+
+
+C.
+Kích thước tập tin lưu trữ bộ nhớ quá lớn do duy trì lịch sử của toàn bộ các phép toán Boolean.
+
+
+D.
+Mất đi khả năng biểu diễn cấu trúc vật thể có tính chất rỗng hoặc bị khuyết vật liệu bên trong.
+
+
+Câu hỏi 33
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Trong mô hình chiếu sáng Phong, góc giữa vector phản xạ R
+ và vector hướng nhìn V
+ là 60∘
+, hệ số độ bóng α=2
+. Giá trị thành phần phản xạ gương (Specular) theo luật cosin bằng bao nhiêu?
+
+Câu hỏi 33Select one:
+
+A.
+0.5
+
+
+B.
+0.0
+
+
+C.
+0.25
+
+
+D.
+1.0
+
+
+Câu hỏi 34
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Ma trận Viewport chuyển đổi tọa độ từ không gian NDC sang màn hình hiển thị có độ phân giải 800×600. Điểm có tọa độ NDC (−1,1) sẽ được ánh xạ tới tọa độ Pixel nào trên màn hình (giả sử gốc (0,0) ở góc dưới bên trái)?
+
+Câu hỏi 34Select one:
+
+A.
+(800, 600)
+
+
+B.
+(0, 0)
+
+
+C.
+(0, 600)
+
+
+D.
+(800, 0)
+
+
+Câu hỏi 35
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Khi xử lý một khung cảnh 3D thế giới mở (Open World) với hàng triệu vật thể, kỹ thuật nào mang lại hiệu quả cao nhất để giải phóng băng thông cho CPU bằng cách ngăn chặn việc gửi dữ liệu không cần thiết xuống GPU? [cite: 574, 575]
+
+Câu hỏi 35Select one:
+
+A.
+Back-face Culling kiểm tra tích vô hướng giữa pháp tuyến và vector hướng nhìn [cite: 575]
+
+
+B.
+Frustum Culling kiểm tra bao đóng vật thể với khối chóp cụt của Camera [cite: 575]
+
+
+C.
+Mipmapping tự động lựa chọn kết cấu độ phân giải thấp cho vật thể ở xa [cite: 575]
+
+
+D.
+Alpha Test loại bỏ các Fragment có độ trong suốt cao ở khâu cuối Pipeline [cite: 575]
+Đặc tính bao lồi (Convex Hull) của đường cong Bézier mang lại lợi ích kỹ thuật nào trong đồ họa?
+
+Câu hỏi 36Select one:
+
+A.
+Đảm bảo toàn bộ đường cong luôn nằm gọn bên trong đa giác tạo bởi các điểm điều khiển.
+
+
+B.
+Tự động tính toán phân chia đường cong thành các đoạn thẳng tuyến tính để hiển thị.
+
+
+C.
+Cho phép đường cong tự động khép kín thành vòng lặp mà không cần thêm điểm nối.
+
+
+D.
+Bù trừ sai số nội suy khi thực hiện các phép biến đổi xoay quanh gốc tọa độ Descartes.
+
+
+Câu hỏi 37
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Để tịnh tiến đối tượng P(x,y)
+ theo vector v(5,−2)
+ trong hệ tọa độ thuần nhất (Homogeneous Coordinates), ma trận biến đổi nào sau đây là đúng?
+
+Câu hỏi 37Select one:
+
+A.
+⎡⎣⎢1000105−21⎤⎦⎥
+
+
+B.
+⎡⎣⎢5000−20001⎤⎦⎥
+
+
+C.
+⎡⎣⎢100010−521⎤⎦⎥
+
+
+D.
+⎡⎣⎢0010015−21⎤⎦⎥
+
+
+Câu hỏi 38
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Cơ chế làm tròn số thực thành số nguyên trong thuật toán DDA gây ra hệ quả trực tiếp nào?
+
+Câu hỏi 38Select one:
+
+A.
+Nâng cao độ chính xác nội suy tọa độ tuyệt đối so với thuật toán vẽ đường Bresenham.
+
+
+B.
+Khử hoàn toàn hiệu ứng răng cưa Aliasing trên các đoạn thẳng có độ dốc chéo bất kỳ.
+
+
+C.
+Sinh ra lỗi chia cho không tuyệt đối khi đoạn thẳng cần vẽ nằm song song với trục tung.
+
+
+D.
+Làm giảm tốc độ thực thi tổng thể do tiêu tốn tài nguyên hệ thống cho phép toán số thực.
+
+
+Câu hỏi 39
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Tại sao Homogeneous Coordinates (Tọa độ thuần nhất) được sử dụng phổ biến trong biến đổi đồ họa?
+
+Câu hỏi 39Select one:
+
+A.
+Cho phép biểu diễn phép tịnh tiến dưới dạng nhân ma trận.
+
+
+B.
+Loại bỏ sự cần thiết của ma trận nghịch đảo trong xử lý 3D.
+
+
+C.
+Giảm số lượng phép tính dấu phẩy động khi thực hiện xoay.
+
+
+D.
+Tăng độ chính xác khi tính toán các phép biến đổi Affine.
+
+
+Câu hỏi 40
+Chưa trả lời
+Đạt điểm 1,0
+Đặt cờ
+Đoạn văn câu hỏi
+Nhược điểm lớn nhất của mô hình Voxels có độ phân giải cao trong biểu diễn thể tích 3D là gì?
+
+Câu hỏi 40Select one:
+
+A.
+Tiêu tốn lượng bộ nhớ khổng lồ $O(n^3)$ và hiển thị hình ảnh bị khối răng cưa khi phóng to.
+
+
+B.
+Mặc định chuyển bề mặt vật thể thành dạng lưới tam giác gồ ghề bất chấp độ mịn thiết lập.
+
+
+C.
+Chỉ lưu trữ thông tin bề mặt lớp vỏ ngoài cùng, loại bỏ hoàn toàn dữ liệu khối đặc bên trong.
+
+
+D.
+Triệt tiêu khả năng ứng dụng các phép toán tập hợp Boolean để cắt ghép cấu trúc hình học.
+Đáp án:
+a
+c
+c
+b
+a
+c
+b
+b
+b
+d
+a
+a
+b
+d
+a
+b
+b
+c
+c
+c
+a
+c
+c
+b
+d
+a
+a
+d
+a
+d
+d
+b
+c
+c
+b
+a
+a
+d
+a
+a
