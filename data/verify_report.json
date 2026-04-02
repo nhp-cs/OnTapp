@@ -1,0 +1,32 @@
+[
+  {
+    "id": "exam_dhmt_de_2",
+    "file": "DeThi/dhmt2.txt",
+    "questions": 40,
+    "ok": true
+  },
+  {
+    "id": "exam_dhmt_de_3",
+    "file": "DeThi/dhmt3.txt",
+    "questions": 40,
+    "ok": true
+  },
+  {
+    "id": "exam_dhmt_de_4",
+    "file": "DeThi/dhmt4.txt",
+    "questions": 40,
+    "ok": true
+  },
+  {
+    "id": "exam_dhmt_de_5",
+    "file": "DeThi/dhmt5.txt",
+    "questions": 40,
+    "ok": true
+  },
+  {
+    "id": "exam_dhmt_de_6",
+    "file": "DeThi/dhmt6.txt",
+    "questions": 40,
+    "ok": true
+  }
+]

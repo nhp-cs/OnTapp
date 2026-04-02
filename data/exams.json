@@ -27,7 +27,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 0.6 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q02",
@@ -51,7 +51,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Mesh định nghĩa sự kết nối giữa các điểm để tạo thành bề mặt. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q03",
@@ -75,7 +75,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Tỷ lệ khung hình (Aspect Ratio) giữa chiều rộng và chiều cao màn hình Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q04",
@@ -99,7 +99,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Thiếu hụt độ chính xác của Depth Buffer khi phân giải chiều sâu cho hai mặt phẳng quá gần nhau Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q05",
@@ -123,7 +123,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Mô tả bề mặt toán học chính xác và hỗ trợ kiểm tra trong/ngoài của một điểm dễ dàng Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q06",
@@ -147,7 +147,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 0.24 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q07",
@@ -171,7 +171,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Căn cứ vào độ dốc lớn nhất để chọn trục bước tiến đơn vị nhằm đảm bảo quỹ đạo không bị gián đoạn Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q08",
@@ -195,7 +195,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Phần tử thể tích lập phương mang thông tin màu sắc và độ đậm đặc trong không gian 3D Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q09",
@@ -219,7 +219,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Ánh sáng nền phản xạ từ môi trường lên mọi bề mặt vật thể Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q10",
@@ -243,7 +243,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Phản xạ gương (Specular Reflection) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q11",
@@ -267,7 +267,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Vector pháp tuyến và độ dài của các cạnh đối tượng Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q12",
@@ -291,7 +291,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Chuyển đổi tọa độ từ Screen Space sang NDC và nhân với ma trận nghịch đảo (Mproj·Mview)−1 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q13",
@@ -315,7 +315,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Khắc phục sự ngược hướng giữa hệ tọa độ Descartes và hệ tọa độ màn hình Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q14",
@@ -339,7 +339,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. [[cosθ, -sinθ, 0, 0], [sinθ, cosθ, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]] Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q15",
@@ -363,7 +363,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Các vật thể ở xa có kích thước nhỏ hơn các vật thể ở gần Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q16",
@@ -387,7 +387,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. So sánh độ sâu mảnh điểm ảnh mới với độ sâu đang lưu tại tọa độ đó trong Depth Buffer Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q17",
@@ -411,7 +411,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. (1023, 767) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q18",
@@ -435,7 +435,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Làm biến dạng vector pháp tuyến, cần nhân với ma trận chuyển vị nghịch đảo (inverse transpose) Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q19",
@@ -459,7 +459,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Xác định thứ tự vẽ từ sau ra trước mà không phụ thuộc vào Z-buffer Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q20",
@@ -483,7 +483,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Xác định hình dáng và độ cong của đường cong thông qua đa thức Bernstein Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q21",
@@ -507,7 +507,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Displacement thực sự thay đổi vị trí đỉnh hình học, Normal chỉ thay đổi pháp tuyến khi tính sáng Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q22",
@@ -531,7 +531,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 1 − R = −9 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q23",
@@ -555,7 +555,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (0.3, 0.7) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q24",
@@ -579,7 +579,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Vector lưu bằng phương trình toán học, Raster lưu ma trận điểm ảnh Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q25",
@@ -603,7 +603,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Giảm Aliasing và tối ưu truy xuất khi vật thể ở xa camera Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q26",
@@ -627,7 +627,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Đảo chiều trục Y do quy ước quét dòng màn hình từ trên xuống dưới Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q27",
@@ -651,7 +651,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Tính trung bình có trọng số của 4 texel gần nhất Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q28",
@@ -675,7 +675,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Thu nhỏ vật thể xa và phóng to vật thể gần so với camera Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q29",
@@ -699,7 +699,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. −1 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q30",
@@ -723,7 +723,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Tìm giao điểm dòng quét với cạnh đa giác và tô giữa các cặp giao điểm Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q31",
@@ -747,7 +747,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. 0.1 Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q32",
@@ -771,7 +771,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Gouraud Shading (nội suy màu sắc trên bề mặt) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q33",
@@ -795,7 +795,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. 6 Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q34",
@@ -819,7 +819,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Thuật toán Bresenham với tham số quyết định (Decision Parameter) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q35",
@@ -843,7 +843,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Không thể xác định màu sắc và độ sáng chi tiết cho từng pixel Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q36",
@@ -867,7 +867,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Quét chùm tia/tín hiệu lần lượt theo từng hàng từ trên xuống dưới màn hình Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q37",
@@ -891,7 +891,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Bảo toàn tính song song của các đường thẳng và không tạo thu nhỏ theo chiều sâu Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q38",
@@ -915,7 +915,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Xảy ra hiện tượng rách hình do đọc bộ đệm khi chưa vẽ xong Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q39",
@@ -939,7 +939,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Tính góc tương đối giữa các vector để xác định cường độ chiếu sáng (ví dụ mô hình Phong) Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "dht_q40",
@@ -963,7 +963,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Vector phản xạ R và vector hướng nhìn V Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       }
     ]
   },
@@ -995,7 +995,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Viết mã tùy chỉnh (Shaders) để can thiệp vào quá trình xử lý. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q02",
@@ -1019,7 +1019,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Sự suy giảm cường độ ánh sáng môi trường khuếch tán tại các rãnh sâu hoặc góc kẹt bề mặt. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q03",
@@ -1043,7 +1043,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. (−3,2) Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q04",
@@ -1067,7 +1067,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Displacement Mapping làm biến đổi vị trí hình học thực tế của các đỉnh Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q05",
@@ -1091,7 +1091,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Illumination tính toán cường độ sáng tại một điểm, còn Shading nội suy màu sắc cho toàn bộ bề mặt. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q06",
@@ -1115,7 +1115,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Nguồn sáng định hướng (Directional Light) có vector hướng sáng không đổi Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q07",
@@ -1139,7 +1139,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Hiển thị các khối màu vuông vức rời rạc tạo thành hiệu ứng răng cưa rõ rệt trên kết cấu. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q08",
@@ -1163,7 +1163,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Phong Shading nội suy vector pháp tuyến để tính sáng tại từng pixel. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q09",
@@ -1187,7 +1187,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (2,3) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q10",
@@ -1211,7 +1211,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 2Δy−Δx=2 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q11",
@@ -1235,7 +1235,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Do độ nhạy cảm của thị giác con người với sự chênh lệch độ sáng đột ngột tại ranh giới các đa giác phẳng Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q12",
@@ -1259,7 +1259,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Bresenham chỉ sử dụng phép toán cộng trừ số nguyên, trong khi DDA phụ thuộc vào số thực và làm tròn. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q13",
@@ -1283,7 +1283,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Cung cấp thứ tự hiển thị chính xác từ sau ra trước mà không cần dùng Z-buffer Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q14",
@@ -1307,7 +1307,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. (3,2) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q15",
@@ -1331,7 +1331,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Hướng xuống dưới từ góc trên bên trái màn hình. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q16",
@@ -1355,7 +1355,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (1/3,1/3) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q17",
@@ -1379,7 +1379,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Các giá trị chiếu sáng lóa có thể rơi vào vùng giữa đa giác nhưng bị bỏ sót do thuật toán chỉ nội suy từ đỉnh Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q18",
@@ -1403,7 +1403,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Loại bỏ các đa giác hướng mặt về phía ngược với camera. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q19",
@@ -1427,7 +1427,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. GPU sở hữu hàng ngàn lõi tính toán song song xử lý luồng dữ liệu đơn (SIMD/SIMT) Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q20",
@@ -1451,7 +1451,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Chia các thành phần x, y, z cho w để đưa tọa độ về không gian thiết bị chuẩn NDC. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q21",
@@ -1474,32 +1474,8 @@
             "text": "(8,−10)"
           }
         ],
-        "answer": "C",
-        "explanation": ""
-      },
-      {
-        "id": "exam_dhmt_de_2_q21",
-        "text": "Thao tác Perspective Division (Chia phối cảnh) biến đổi tọa độ không gian thuần nhất về chuẩn nào? Câu hỏi 20Select one: A. Cộng thành phần w vào bộ đệm Z-buffer để xác định thứ tự ưu tiên hiển thị đa giác. B. Trừ giá trị w khỏi các tham số tọa độ để loại bỏ hiệu ứng biến dạng của thấu kính camera. C. Chia các thành phần x, y, z cho w để đưa tọa độ về không gian thiết bị chuẩn NDC. D. Nhân các thành phần x, y, z với w để khôi phục lại tỷ lệ kích thước gốc của đối tượng. Cho đường cong Bézier bậc 2 với các điểm kiểm soát P0(0,0),P1(2,5),P2(6,0) . Vector tiếp tuyến của đường cong tại điểm cuối t=1 có giá trị bằng bao nhiêu?",
-        "options": [
-          {
-            "key": "A",
-            "text": "(4,−5)"
-          },
-          {
-            "key": "B",
-            "text": "(−4,5)"
-          },
-          {
-            "key": "C",
-            "text": "(2,5)"
-          },
-          {
-            "key": "D",
-            "text": "(8,−10)"
-          }
-        ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. (4,−5) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q22",
@@ -1523,7 +1499,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Lựa chọn điểm ảnh tối ưu tiếp theo dựa trên vị trí trung điểm. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q23",
@@ -1547,7 +1523,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Chỉ sử dụng các phép toán trên số nguyên để tăng tốc độ xử lý. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q24",
@@ -1571,7 +1547,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Chuẩn hóa dải tọa độ về khoảng [-1, 1] giúp thuật toán Clipping hoạt động nhất quán. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q25",
@@ -1595,7 +1571,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Dùng để thực hiện phép chia phối cảnh nhằm tạo độ sâu. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q26",
@@ -1619,7 +1595,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Ánh xạ điểm click trên màn hình 2D thành một tia chiếu trong không gian thế giới Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q27",
@@ -1643,7 +1619,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. ⎡⎣⎢200020441⎤⎦⎥ Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q28",
@@ -1667,7 +1643,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Tô màu, áp dụng vân bề mặt và tính toán ánh sáng cho từng mảnh điểm ảnh rời rạc. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q29",
@@ -1691,7 +1667,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Kích thước chiều rộng (Width) của màn hình hiển thị hoặc độ phân giải của bộ đệm. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q30",
@@ -1715,7 +1691,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Thuật toán Bresenham với các phép toán cộng trừ số nguyên Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q31",
@@ -1739,7 +1715,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Tách đa giác thành hai mảnh nhỏ làm gia tăng số lượng nút và đỉnh trong cây phân cấp Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q32",
@@ -1763,7 +1739,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Tốn kém nhiều tài nguyên để tính toán chuyển đổi thành bề mặt hiển thị lưới đa giác Tessellation. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q33",
@@ -1787,7 +1763,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. 0.25 Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q34",
@@ -1811,7 +1787,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. (0, 600) Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q35",
@@ -1835,7 +1811,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Frustum Culling kiểm tra bao đóng vật thể với khối chóp cụt của Camera Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q36",
@@ -1859,7 +1835,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Đảm bảo toàn bộ đường cong luôn nằm gọn bên trong đa giác tạo bởi các điểm điều khiển. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q37",
@@ -1883,7 +1859,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. ⎡⎣⎢1000105−21⎤⎦⎥ Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q38",
@@ -1907,7 +1883,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Làm giảm tốc độ thực thi tổng thể do tiêu tốn tài nguyên hệ thống cho phép toán số thực. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q39",
@@ -1931,7 +1907,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Cho phép biểu diễn phép tịnh tiến dưới dạng nhân ma trận. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_2_q40",
@@ -1955,7 +1931,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Tiêu tốn lượng bộ nhớ khổng lồ $O(n^3)$ và hiển thị hình ảnh bị khối răng cưa khi phóng to. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       }
     ]
   },
@@ -1987,7 +1963,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Đường cong tham số Cubic Bézier Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q02",
@@ -2011,7 +1987,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Giữ lại bề mặt để tiếp tục xử lý Rasterization do hướng của đa giác đang đối diện với người quan sát Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q03",
@@ -2035,7 +2011,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Thay thế vector pháp tuyến đỉnh nội suy bằng vector pháp tuyến đọc từ bản đồ họa tiết RGB. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q04",
@@ -2059,7 +2035,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Đồ họa Vector mô tả hình học bằng các phương trình toán học Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q05",
@@ -2083,7 +2059,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Biểu diễn bề mặt thông qua hàm vector ánh xạ từ lưới tham số 2D sang không gian tọa độ 3D. Thực hiện phép quay điểm P(2,0) quanh gốc tọa độ một góc 60∘ ngược chiều kim đồng hồ. Tọa độ của điểm P′ sau khi quay là bao nhiêu (Biết cos60∘=0.5 , sin60∘≈0.866 )? Câu hỏi 6Select one: Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q06",
@@ -2107,7 +2083,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. (1,1.732) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q07",
@@ -2131,7 +2107,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. 1/3–√ Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q08",
@@ -2155,7 +2131,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. (1, 5, 5) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q09",
@@ -2179,7 +2155,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Các tia sáng song song nhau và vector hướng sáng không đổi tại mọi điểm trên bề mặt vật thể. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q10",
@@ -2203,7 +2179,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Cung cấp lớp giao tiếp phần mềm trừu tượng hóa để CPU ra lệnh điều khiển phần cứng GPU. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q11",
@@ -2227,7 +2203,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Xoay ngược chiều kim đồng hồ quanh gốc tọa độ. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q12",
@@ -2251,7 +2227,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Tại vị trí đặt Camera quan sát nằm bên trong hệ tọa độ không gian thế giới (World Space). Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q13",
@@ -2275,7 +2251,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Góc giữa vector phản xạ và vector hướng nhìn của camera. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q14",
@@ -2299,7 +2275,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Chỉ sử dụng một vector pháp tuyến duy nhất để tính toán ánh sáng chung cho toàn bộ đa giác. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q15",
@@ -2323,7 +2299,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Ánh xạ tọa độ từ vùng quan sát chuẩn sang tọa độ pixel màn hình. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q16",
@@ -2347,7 +2323,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. 1.0 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q17",
@@ -2371,7 +2347,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. (1,−2,3) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q18",
@@ -2395,7 +2371,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. a=−4,b=3 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q19",
@@ -2419,7 +2395,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Thực hiện phép chiếu phối cảnh để tạo hiệu ứng thu nhỏ vật thể dựa trên chiều sâu không gian. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q20",
@@ -2443,7 +2419,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Phép toán số thực dấu phẩy động đòi hỏi chi phí tính toán cao và bước nhảy góc gây đứt đoạn. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q21",
@@ -2467,7 +2443,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Topology mô tả cách các đỉnh nối với nhau tạo thành mặt, Geometry chứa tọa độ không gian. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q22",
@@ -2491,7 +2467,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Độ phân giải của bộ đệm Z-buffer không đủ để phân biệt hai đa giác nằm quá sát nhau. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q23",
@@ -2515,7 +2491,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Sự tán xạ ánh sáng đồng đều theo nhiều hướng khi va chạm với các bề mặt vật liệu thô ráp. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q24",
@@ -2539,7 +2515,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. 0001 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q25",
@@ -2563,7 +2539,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Tịnh tiến (−C)→Xoay→Tịnh tiến C Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q26",
@@ -2587,7 +2563,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Chỉ tính tương tác trực tiếp từ nguồn sáng đến vật thể, bỏ qua sự phản xạ chéo giữa các vật thể. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q27",
@@ -2611,7 +2587,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Bắt buộc nội suy vector pháp tuyến và tính toán lại phương trình ánh sáng tại mọi mảnh điểm ảnh. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q28",
@@ -2635,7 +2611,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. −2 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q29",
@@ -2659,7 +2635,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Thay đổi trọng số nội suy của đa thức Bernstein tác động đến hình dáng đường cong Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q30",
@@ -2683,7 +2659,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. (1,1,1) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q31",
@@ -2707,7 +2683,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Gouraud nội suy màu sắc từ các đỉnh, còn Phong nội suy pháp tuyến để tính sáng pixel Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q32",
@@ -2731,7 +2707,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Độ dốc tiến tới vô cực làm xuất hiện khoảng trống và phân bố mật độ điểm ảnh không đều. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q33",
@@ -2755,7 +2731,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Thuật toán Cohen-Sutherland sử dụng các phép toán bitwise trên mã vùng (Region Code) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q34",
@@ -2779,7 +2755,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. (0,4) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q35",
@@ -2803,7 +2779,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Hai vector tiếp tuyến tại điểm nối có sự đồng nhất hoàn toàn về cả phương, chiều và độ lớn. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q36",
@@ -2827,7 +2803,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Hình ảnh bị phân tách thành các khối vuông răng cưa rõ rệt nhưng tối ưu tốc độ xử lý điểm ảnh Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q37",
@@ -2851,7 +2827,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Giảm 7/8 khối lượng tính toán bằng cách lấy đối xứng tọa độ. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q38",
@@ -2875,7 +2851,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Mipmapping tạo tháp ảnh với các mức độ chi tiết (LOD) được tính toán trước Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q39",
@@ -2899,7 +2875,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Làm thay đổi vị trí cuối cùng do tính chất không giao hoán của phép nhân ma trận Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_3_q40",
@@ -2923,7 +2899,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Điểm xác định một vị trí cụ thể trong hệ tọa độ, trong khi Véc-tơ biểu diễn hướng và độ lớn. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       }
     ]
   },
@@ -2955,7 +2931,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Phụ thuộc nhiều vào các phép toán số thực gây giảm hiệu suất xử lý của hệ thống. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q02",
@@ -2979,7 +2955,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Tịnh tiến −P→ Co giãn → Tịnh tiến P Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q03",
@@ -3003,7 +2979,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Phép biến đổi được tính toán tuần tự và hoàn toàn không có tính chất giao hoán. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q04",
@@ -3027,7 +3003,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Phép biến đổi hình học tương đối so với hệ tọa độ gốc của đối tượng cha trực tiếp. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q05",
@@ -3051,7 +3027,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Đẩy nhanh tốc độ xử lý do chỉ sử dụng các phép toán cộng trừ số nguyên Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q06",
@@ -3075,7 +3051,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. ⎡⎣⎢1000−10001⎤⎦⎥ Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q07",
@@ -3099,7 +3075,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Xóa bỏ các đường ranh giới chuyển tiếp giật cục rõ rệt giữa hai cấp độ phân giải Mipmap kề nhau. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q08",
@@ -3123,7 +3099,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (0,0,5) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q09",
@@ -3147,7 +3123,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Kết hợp các khối cơ bản thông qua các phép toán tập hợp Boolean như hợp, giao, hiệu. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q10",
@@ -3171,7 +3147,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. −0.866 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q11",
@@ -3195,7 +3171,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Nhân dồn tuần tự các ma trận biến đổi cục bộ (Local Transforms) từ gốc đến ngọn Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q12",
@@ -3219,7 +3195,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 6 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q13",
@@ -3243,7 +3219,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Đảo chiều trục tung (Flip Y) trong quá trình biến đổi Viewport Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q14",
@@ -3267,7 +3243,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Tích vô hướng giữa vector phản xạ lý tưởng R và vector hướng nhìn V Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q15",
@@ -3291,7 +3267,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Sử dụng góc quay Euler tuần tự gây ra sự trùng lặp và khóa cứng giữa hai trục quay không gian. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q16",
@@ -3315,7 +3291,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Tịnh tiến theo vector (0,0,−5) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q17",
@@ -3339,7 +3315,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Sử dụng hai bộ đệm để tránh hiện tượng nhấp nháy khi làm mới khung hình. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q18",
@@ -3363,7 +3339,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Chuyển đổi mô tả hình học toán học sang tập hợp các điểm ảnh. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q19",
@@ -3387,7 +3363,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Vị trí, tỷ lệ và góc xoay tương đối của đối tượng đó so với hệ tọa độ của nút cha trực tiếp. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q20",
@@ -3411,7 +3387,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Lưu trữ mảng dữ liệu điểm ảnh hoàn chỉnh cuối cùng để xuất tín hiệu ra màn hình. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q21",
@@ -3435,7 +3411,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Lọc nội suy song tuyến tính (Bilinear Filtering) giữa 4 Texels lân cận Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q22",
@@ -3459,7 +3435,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Cho phép tích hợp các phép tịnh tiến vào một phép nhân ma trận tổng hợp Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q23",
@@ -3483,7 +3459,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Bậc của đa thức Bernstein được sử dụng để nội suy hình dáng đường cong. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q24",
@@ -3507,7 +3483,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Biến đổi tọa độ các đỉnh không gian và tính toán giá trị chiếu sáng sơ bộ tại đỉnh. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q25",
@@ -3531,7 +3507,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. 0.375 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q26",
@@ -3555,7 +3531,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (256,768) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q27",
@@ -3579,7 +3555,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 1001 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q28",
@@ -3603,7 +3579,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Mối quan hệ hàm mũ của giá trị cosin góc lệch giữa tia chiếu hiện tại so với vector trục chính Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q29",
@@ -3627,7 +3603,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Cắt tỉa các đoạn thẳng nằm ngoài vùng quan sát 2D (Clipping). Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q30",
@@ -3651,7 +3627,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Culling loại bỏ hoàn toàn các đa giác khuất, Clipping xén các đa giác giao cắt ranh giới quan sát. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q31",
@@ -3675,7 +3651,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Áp bản đồ hình ảnh lên bề mặt 3D để tăng chi tiết vật liệu. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q32",
@@ -3699,7 +3675,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (3,4,2) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q33",
@@ -3723,7 +3699,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Nhân điểm thiết bị chuẩn NDC với ma trận nghịch đảo để tạo ra tia chiếu trong không gian thế giới. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q34",
@@ -3747,7 +3723,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Chỉ cần tính toán cho một octant và sử dụng phép đối xứng cho các phần còn lại Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q35",
@@ -3771,7 +3747,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Dịch chuyển tọa độ dọc theo một trục tỉ lệ thuận với khoảng cách đến trục tọa độ còn lại. Trong thuật toán vẽ đường thẳng Bresenham, sự thay đổi tham số quyết định pk ảnh hưởng thế nào đến việc chọn điểm ảnh tiếp theo? Question 36Select one: Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q36",
@@ -3795,7 +3771,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Xác định việc tăng thêm tọa độ trục phụ dựa trên khoảng cách đến đường thực Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q37",
@@ -3819,7 +3795,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Illumination tính màu sắc tại một điểm toán học, Shading nội suy màu sắc lan truyền trên bề mặt. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q38",
@@ -3843,7 +3819,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Bị giới hạn vùng chiếu bởi một hình nón và có sự suy giảm cường độ sáng từ tâm ra biên. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q39",
@@ -3867,7 +3843,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. (4,6,1) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_4_q40",
@@ -3891,7 +3867,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Phép tịnh tiến là phép cộng vector, không thể biểu diễn dưới dạng nhân ma trận tuyến tính thuần túy. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       }
     ]
   },
@@ -3923,7 +3899,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Cơ chế Depth Buffering (Z-Buffer) so sánh giá trị độ sâu của từng Fragment Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q02",
@@ -3947,7 +3923,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 3(P1−P0) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q03",
@@ -3971,7 +3947,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Giai đoạn xử lý mảnh (Fragment Processing) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q04",
@@ -3995,7 +3971,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Cắt tỉa các đoạn thẳng nằm ngoài vùng quan sát 2D (Clipping). Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q05",
@@ -4019,7 +3995,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Hướng xuống dưới từ góc trên bên trái màn hình. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q06",
@@ -4043,7 +4019,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. (2,2) Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q07",
@@ -4067,7 +4043,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Per-fragment (Fragment Shader) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q08",
@@ -4091,7 +4067,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. T(−1,−1)⋅S(2,2)⋅T(1,1) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q09",
@@ -4115,7 +4091,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Bresenham chỉ sử dụng phép toán cộng trừ số nguyên, trong khi DDA phụ thuộc vào số thực và làm tròn. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q10",
@@ -4139,7 +4115,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Chỉ tính tương tác trực tiếp từ nguồn sáng đến vật thể, bỏ qua sự phản xạ chéo giữa các vật thể. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q11",
@@ -4163,7 +4139,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Quá trình chia lưới bề mặt (Tessellation) từ các phép toán Boolean tốn chi phí thời gian thực rất cao Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q12",
@@ -4187,7 +4163,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Thực sự làm dịch chuyển vị trí không gian của các đỉnh hình học lưới dựa trên bản đồ độ cao Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q13",
@@ -4211,7 +4187,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Bắt buộc nội suy vector pháp tuyến và tính toán lại phương trình ánh sáng tại mọi mảnh điểm ảnh. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q14",
@@ -4235,7 +4211,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Sự đảo ngược hướng của trục Y giữa hệ Descartes và hệ tọa độ quét dòng Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q15",
@@ -4259,7 +4235,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Thay thế vector pháp tuyến đỉnh nội suy bằng vector pháp tuyến đọc từ bản đồ họa tiết RGB. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q16",
@@ -4283,7 +4259,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. 0.5 Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q17",
@@ -4307,7 +4283,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Kết hợp các khối cơ bản thông qua các phép toán tập hợp Boolean như hợp, giao, hiệu. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q18",
@@ -4331,7 +4307,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Độ dốc tiến tới vô cực làm xuất hiện khoảng trống và phân bố mật độ điểm ảnh không đều. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q19",
@@ -4355,7 +4331,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. 400 Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q20",
@@ -4379,7 +4355,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Tiêu tốn lượng bộ nhớ khổng lồ $O(n^3)$ và hiển thị hình ảnh bị khối răng cưa khi phóng to. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q21",
@@ -4403,7 +4379,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Giảm thiểu hiện tượng nhiễu răng cưa do lấy mẫu trên vân bề mặt có độ phân giải cao Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q22",
@@ -4427,7 +4403,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Bảo toàn tuyệt đối tính song song của các đường thẳng và không tạo hiệu ứng thu nhỏ theo chiều sâu. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q23",
@@ -4451,7 +4427,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. ⎡⎣⎢300030221⎤⎦⎥ Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q24",
@@ -4475,7 +4451,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Tìm giao điểm của dòng quét với cạnh đa giác và tô màu khoảng nằm giữa các cặp giao điểm. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q25",
@@ -4499,7 +4475,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Tính toán góc tương đối giữa các vector để xác định cường độ chiếu sáng trong mô hình Phong. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q26",
@@ -4523,7 +4499,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. 0.707 Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q27",
@@ -4547,7 +4523,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Đảo chiều trục Y do quy ước phần cứng quét dòng màn hình từ trên xuống dưới. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q28",
@@ -4571,7 +4547,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Vẽ toàn bộ vật thể đục trước, sau đó sắp xếp và vẽ vật thể trong suốt từ xa đến gần Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q29",
@@ -4595,7 +4571,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. ⎡⎣⎢010100001⎤⎦⎥ Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q30",
@@ -4619,7 +4595,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Normal Mapping can thiệp vào pháp tuyến khi tính toán ánh sáng Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q31",
@@ -4643,7 +4619,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Mesh định nghĩa sự kết nối giữa các điểm để tạo thành bề mặt. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q32",
@@ -4667,7 +4643,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Sử dụng thuật toán Midpoint kết hợp với tính đối xứng 8 hướng (8-Way Symmetry) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q33",
@@ -4691,7 +4667,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Biến đổi tọa độ các đỉnh không gian và tính toán giá trị chiếu sáng sơ bộ tại đỉnh. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q34",
@@ -4715,7 +4691,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Lưu trữ mảng dữ liệu điểm ảnh hoàn chỉnh cuối cùng để xuất tín hiệu ra màn hình. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q35",
@@ -4739,7 +4715,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Phép biến đổi được tính toán tuần tự và hoàn toàn không có tính chất giao hoán. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q36",
@@ -4763,7 +4739,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. 0.75 Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q37",
@@ -4787,7 +4763,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Điểm xác định một vị trí cụ thể trong hệ tọa độ, trong khi Véc-tơ biểu diễn hướng và độ lớn. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q38",
@@ -4811,7 +4787,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Phép toán số thực dấu phẩy động đòi hỏi chi phí tính toán cao và bước nhảy góc gây đứt đoạn. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q39",
@@ -4835,7 +4811,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Cho phép can thiệp mã nguồn trực tiếp vào quá trình xử lý đỉnh và mảnh Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_5_q40",
@@ -4859,7 +4835,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Các vật thể ở xa có kích thước nhỏ hơn các vật thể ở gần. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       }
     ]
   },
@@ -4891,7 +4867,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Xác định thứ tự vẽ các vật thể từ sau ra trước mà không cần phụ thuộc vào bộ đệm Z-buffer. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q02",
@@ -4915,7 +4891,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Độ phân giải của bộ đệm Z-buffer không đủ để phân biệt hai đa giác nằm quá sát nhau. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q03",
@@ -4939,7 +4915,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Chuẩn hóa dải tọa độ về khoảng [-1, 1] giúp thuật toán Clipping hoạt động nhất quán. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q04",
@@ -4963,7 +4939,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Nhân toàn bộ đỉnh với Ma trận quan sát (View Matrix) nghịch đảo từ biến đổi Camera Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q05",
@@ -4987,7 +4963,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (0,4,0,1) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q06",
@@ -5011,7 +4987,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Thực hiện phép chiếu phối cảnh để tạo hiệu ứng thu nhỏ vật thể dựa trên chiều sâu không gian. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q07",
@@ -5035,7 +5011,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Bậc của đa thức Bernstein được sử dụng để nội suy hình dáng đường cong. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q08",
@@ -5059,7 +5035,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Ánh sáng nền phản xạ từ môi trường lên mọi bề mặt vật thể. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q09",
@@ -5083,7 +5059,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Xác định hình dáng và độ cong của đường thông qua đa thức Bernstein. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q10",
@@ -5107,7 +5083,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Cung cấp lớp giao tiếp phần mềm trừu tượng hóa để CPU ra lệnh điều khiển phần cứng GPU. Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q11",
@@ -5131,7 +5107,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Phụ thuộc nhiều vào các phép toán số thực gây giảm hiệu suất xử lý của hệ thống. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q12",
@@ -5155,7 +5131,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Hai vector tiếp tuyến tại điểm nối có sự đồng nhất hoàn toàn về cả phương, chiều và độ lớn. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q13",
@@ -5179,7 +5155,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Xác nhận điểm kiểm tra nằm ngoài lớp vỏ hình học bề mặt của đối tượng 3D Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q14",
@@ -5203,7 +5179,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Ma trận thuần nhất (Homogeneous Coordinates) kích thước 3x3 hoặc 4x4 Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q15",
@@ -5227,7 +5203,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (2,3,1) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q16",
@@ -5251,7 +5227,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Chỉ sử dụng các phép toán trên số nguyên để tăng tốc độ xử lý. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q17",
@@ -5275,7 +5251,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Kích thước chiều rộng (Width) của màn hình hiển thị hoặc độ phân giải của bộ đệm. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q18",
@@ -5299,7 +5275,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. 1000 Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q19",
@@ -5323,7 +5299,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Vector lưu trữ đối tượng bằng phương trình toán học, Raster lưu ma trận điểm ảnh. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q20",
@@ -5347,7 +5323,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Sử dụng góc quay Euler tuần tự gây ra sự trùng lặp và khóa cứng giữa hai trục quay không gian. Thao tác Perspective Division (Chia phối cảnh) biến đổi tọa độ không gian thuần nhất về chuẩn nào? Question 21Select one: Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q21",
@@ -5371,7 +5347,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Chia các thành phần x, y, z cho w để đưa tọa độ về không gian thiết bị chuẩn NDC. Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q22",
@@ -5395,7 +5371,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Thuật toán Midpoint Circle với các phép toán cộng trừ số nguyên và dịch bit Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q23",
@@ -5419,7 +5395,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Giảm 7/8 khối lượng tính toán bằng cách lấy đối xứng tọa độ. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q24",
@@ -5443,7 +5419,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Làm cho vùng sáng phản xạ gương hội tụ nhỏ lại và trở nên sắc nét hơn trên bề mặt Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q25",
@@ -5467,7 +5443,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. (0.6,0.8,0) Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q26",
@@ -5491,7 +5467,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Toàn bộ các vùng khuất bóng trên bề mặt mô hình sẽ trở thành màu đen hoàn toàn Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q27",
@@ -5515,7 +5491,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Vị trí, tỷ lệ và góc xoay tương đối của đối tượng đó so với hệ tọa độ của nút cha trực tiếp. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q28",
@@ -5539,7 +5515,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. Cây phân chia không gian nhị phân BSP Trees Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q29",
@@ -5563,7 +5539,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Tiêu thụ thêm khoảng một phần ba dung lượng bộ nhớ lưu trữ cho chuỗi ảnh phân giải thấp dần Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q30",
@@ -5587,7 +5563,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. (xi+1,yi) Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q31",
@@ -5611,7 +5587,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. x⋅d/z Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q32",
@@ -5635,7 +5611,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Làm giảm tốc độ thực thi tổng thể do tiêu tốn tài nguyên hệ thống cho phép toán số thực. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q33",
@@ -5659,7 +5635,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. pi+2Δy−2Δx Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q34",
@@ -5683,7 +5659,7 @@
           }
         ],
         "answer": "B",
-        "explanation": ""
+        "explanation": "Đáp án đúng: B. Chuyển đổi mô tả hình học toán học sang tập hợp các điểm ảnh. Vì phương án B là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q35",
@@ -5707,7 +5683,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 3 - 2R = -13 Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q36",
@@ -5731,7 +5707,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. CPU chuẩn bị dữ liệu và gửi lệnh vẽ xuống GPU để xử lý song song Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q37",
@@ -5755,7 +5731,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. (1,10) Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q38",
@@ -5779,7 +5755,7 @@
           }
         ],
         "answer": "D",
-        "explanation": ""
+        "explanation": "Đáp án đúng: D. 8,294,400 bytes Vì phương án D là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q39",
@@ -5803,7 +5779,7 @@
           }
         ],
         "answer": "A",
-        "explanation": ""
+        "explanation": "Đáp án đúng: A. Topology mô tả cách các đỉnh nối với nhau tạo thành mặt, Geometry chứa tọa độ không gian. Vì phương án A là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       },
       {
         "id": "exam_dhmt_de_6_q40",
@@ -5827,7 +5803,7 @@
           }
         ],
         "answer": "C",
-        "explanation": ""
+        "explanation": "Đáp án đúng: C. Phải dời gốc tọa độ về điểm xoay, thực hiện phép xoay, sau đó tịnh tiến trở lại vị trí cũ Vì phương án C là mô tả phù hợp nhất với yêu cầu của câu hỏi."
       }
     ]
   }
