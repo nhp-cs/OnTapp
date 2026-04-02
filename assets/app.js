@@ -67,13 +67,8 @@ function detectOpenSource() {
 
 function shouldRecordAttempt() {
   const params = new URLSearchParams(window.location.search);
-
-  // explicit overrides
-  if (params.get("record") === "1") return true;
   if (params.get("norecord") === "1" || params.get("nohistory") === "1") return false;
-
-  // auto skip for Zalo in-app browser / Zalo referrer
-  return detectOpenSource() !== "zalo";
+  return true;
 }
 
 async function loadBundledExams() {
@@ -401,6 +396,7 @@ async function boot() {
 
 bindEvents();
 boot();
+
 
 
 
