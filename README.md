@@ -31,7 +31,7 @@ Sau đó mở:
 Mặc định lịch sử lượt thi lưu bằng `localStorage`, nên mỗi trình duyệt/mỗi máy sẽ **không thấy chung**.
 Nếu muốn **ai mở link cũng ghi lịch sử**, hãy dùng Supabase (free tier).
 
-### 1) Tạo bảng `attempts`
+### 1) Tạo bảng `attempts` + RLS policies
 
 Supabase → SQL Editor, chạy:
 
@@ -54,31 +54,37 @@ create table if not exists public.attempts (
 alter table public.attempts enable row level security;
 
 -- Cho phép ghi (INSERT) từ người dùng không đăng nhập
-create policy attempts_insert_anon\non public.attempts\nfor insert\nto anon\nwith check (true);
+create policy attempts_insert_anon
+on public.attempts
+for insert
+to anon
+with check (true);
 
 -- Cho phép đọc (SELECT) để trang admin xem thống kê.
 -- Lưu ý: ai có anon key cũng có thể đọc dữ liệu.
-create policy attempts_select_anon\non public.attempts\nfor select\nto anon\nusing (true);
+create policy attempts_select_anon
+on public.attempts
+for select
+to anon
+using (true);
 ```
 
-### 2) Lấy URL + anon key
+Nếu bạn chạy lại bị lỗi “already exists”, xoá policy rồi tạo lại:
 
-Supabase → Project Settings → API:
-- `Project URL`
-- `anon public key`
-
-### 3) Bật cho TẤT CẢ người dùng (quan trọng)
-
-Điền 2 giá trị vào file `data/backend.json`, rồi commit & push:
-
-```json
-{
-  "url": "https://xxxx.supabase.co",
-  "anonKey": "eyJ..."
-}
+```sql
+drop policy if exists attempts_insert_anon on public.attempts;
+drop policy if exists attempts_select_anon on public.attempts;
 ```
 
-Sau khi deploy lại, bất kỳ ai mở bài (kể cả mở qua Zalo) cũng sẽ ghi lịch sử lên Supabase.
+### 2) Lấy URL + key
+
+Supabase → Settings:
+- `Project URL` (Data API / API)
+- `anon key` / `Publishable key`
+
+### 3) Cấu hình mặc định trong code
+
+Sửa file `assets/config.js` (biến `DEFAULT_SUPABASE`) và commit & push lên GitHub.
 
 > Không dùng `service_role key` trong web tĩnh.
 
@@ -109,4 +115,3 @@ GitHub Pages là static, nên để mọi người thấy đề mới:
 - Export JSON từ trang admin
 - Thêm đề vào `data/exams.json`
 - Commit & push lên GitHub
-

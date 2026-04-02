@@ -71,6 +71,20 @@ function shouldRecordAttempt() {
   return true;
 }
 
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function recordAttemptInBackground(payload) {
+  try {
+    // Don't block showing results if network is slow/hanging.
+    await Promise.race([recordAttempt(payload), delay(8000)]);
+  } catch {
+    // ignore
+  }
+}
+
+
 async function loadBundledExams() {
   try {
     const res = await fetch("./data/exams.json", { cache: "no-store" });
@@ -251,7 +265,7 @@ async function submitExam() {
   const durationSec = startedAt && submittedAt ? Math.max(0, Math.round((submittedAt - startedAt) / 1000)) : null;
   const openSource = detectOpenSource();
   if (shouldRecordAttempt()) {
-    await recordAttempt({
+    void recordAttemptInBackground({
       exam_id: activeExam?.id ?? "",
       exam_title: activeExam?.title ?? "",
       name: participantName,
@@ -396,6 +410,9 @@ async function boot() {
 
 bindEvents();
 boot();
+
+
+
 
 
 
