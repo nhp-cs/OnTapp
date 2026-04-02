@@ -242,7 +242,7 @@ textarea {
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .btn:hover {
@@ -456,7 +456,8 @@ textarea {
 }
 
 .opt__text {
-  line-height: 1.5;`r`n  font-weight: 500;
+  line-height: 1.5;
+  font-weight: 500;
   white-space: pre-wrap;
   padding-top: 2px;
 }
@@ -566,6 +567,7 @@ textarea {
 .footer {
   padding-bottom: 28px;
 }
+
 
 
 

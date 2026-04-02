@@ -1,11 +1,18 @@
 ﻿import { escapeHtml } from "./lib.js";
 import { parseExamText } from "./parser.js";
 import { getCustomExams, upsertCustomExam } from "./storage.js";
-import { clearAttempts, getAttempts } from "./attempts.js";
+import { getSupabaseConfig, setSupabaseConfig, clearSupabaseConfig } from "./config.js";
+import { listAttempts, attemptsBackend } from "./recording.js";
+import { clearAttempts } from "./attempts.js";
 
 const els = {
   statsLine: document.getElementById("statsLine"),
 
+  sbUrl: document.getElementById("sbUrl"),
+  sbAnon: document.getElementById("sbAnon"),
+  saveBackendBtn: document.getElementById("saveBackendBtn"),
+  clearBackendBtn: document.getElementById("clearBackendBtn"),
+  backendLine: document.getElementById("backendLine"),
   attemptsLine: document.getElementById("attemptsLine"),
   attemptsList: document.getElementById("attemptsList"),
   exportAttemptsBtn: document.getElementById("exportAttemptsBtn"),
@@ -74,6 +81,32 @@ function formatDuration(sec) {
   const ss = String(s % 60).padStart(2, "0");
   return `${mm}:${ss}`;
 }
+function refreshBackendUI() {
+  const cfg = getSupabaseConfig();
+  if (els.sbUrl) els.sbUrl.value = cfg?.url ?? "";
+  if (els.sbAnon) els.sbAnon.value = cfg?.anonKey ?? "";
+  if (els.backendLine) els.backendLine.textContent = cfg ? "Supabase: ON" : "Supabase: OFF";
+}
+
+function saveBackend() {
+  const url = String(els.sbUrl?.value ?? "").trim();
+  const anonKey = String(els.sbAnon?.value ?? "").trim();
+  if (!url || !anonKey) {
+    if (els.backendLine) els.backendLine.textContent = "Nhập đủ URL và anon key";
+    return;
+  }
+  setSupabaseConfig({ url, anonKey });
+  refreshBackendUI();
+  refreshAttempts();
+}
+
+function clearBackend() {
+  const ok = confirm("Tắt Supabase (quay về lưu lịch sử trên máy này)?");
+  if (!ok) return;
+  clearSupabaseConfig();
+  refreshBackendUI();
+  refreshAttempts();
+}
 
 async function refreshStats() {
   if (!els.statsLine) return;
@@ -96,19 +129,19 @@ async function refreshStats() {
   els.statsLine.textContent = `Mặc định: ${bundledCount} • Trên máy này: ${customCount} • Câu: ${totalQuestions}${lastText}`;
 }
 
-function refreshAttempts() {
-  const attempts = getAttempts();
+async function refreshAttempts() {
+  const res = await listAttempts(30);
+  const attempts = res.attempts || [];
   const total = attempts.length;
 
-  const last = attempts[0]?.submittedAt || attempts[0]?.createdAt || null;
+  const last = attempts[0]?.submitted_at || attempts[0]?.submittedAt || attempts[0]?.created_at || attempts[0]?.createdAt || null;
   const lastText = last ? ` • Gần nhất: ${formatDateTime(last)}` : "";
 
-  const avgPct =
-    total > 0 ? Math.round(attempts.reduce((acc, a) => acc + (Number(a?.pct) || 0), 0) / total) : 0;
+  const avgPct = total > 0 ? Math.round(attempts.reduce((acc, a) => acc + (Number(a?.pct) || 0), 0) / total) : 0;
   const bestPct = total > 0 ? Math.max(...attempts.map((a) => Number(a?.pct) || 0)) : 0;
 
   if (els.attemptsLine) {
-    els.attemptsLine.textContent = `${total} lượt • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
+    els.attemptsLine.textContent = `${attemptsBackend()} • ${total} lượt • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
   }
 
   if (!els.attemptsList) return;
@@ -117,16 +150,15 @@ function refreshAttempts() {
     return;
   }
 
-  const top = attempts.slice(0, 30);
-  els.attemptsList.innerHTML = top
+  els.attemptsList.innerHTML = attempts
     .map((a) => {
       const name = a?.name ? String(a.name) : "—";
-      const examTitle = a?.examTitle ? String(a.examTitle) : "—";
+      const examTitle = a?.exam_title ? String(a.exam_title) : a?.examTitle ? String(a.examTitle) : "—";
       const correct = Number(a?.correct) || 0;
       const tot = Number(a?.total) || 0;
       const pct = Number(a?.pct) || 0;
-      const when = formatDateTime(a?.submittedAt || a?.createdAt);
-      const dur = formatDuration(a?.durationSec);
+      const when = formatDateTime(a?.submitted_at || a?.submittedAt || a?.created_at || a?.createdAt);
+      const dur = formatDuration(a?.duration_sec ?? a?.durationSec);
       const src = a?.source ? String(a.source) : "";
       const meta = [examTitle, src, when, dur ? `⏱ ${dur}` : ""].filter(Boolean).join(" • ");
 
@@ -142,9 +174,9 @@ function refreshAttempts() {
     })
     .join("");
 }
-
-function exportAttempts() {
-  const attempts = getAttempts();
+async function exportAttempts() {
+  const res = await listAttempts(1000);
+  const attempts = res.attempts || [];
   const blob = new Blob([JSON.stringify(attempts, null, 2)], { type: "application/json;charset=utf-8" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -155,7 +187,7 @@ function exportAttempts() {
 }
 
 function doClearAttempts() {
-  const ok = confirm("Xoá tất cả lượt thi trên máy này?");
+  const ok = confirm("Xoá lịch sử trên máy này?");
   if (!ok) return;
   clearAttempts();
   refreshAttempts();
@@ -254,6 +286,8 @@ async function copyJson() {
 }
 
 function bindEvents() {
+  if (els.saveBackendBtn) els.saveBackendBtn.addEventListener("click", saveBackend);
+  if (els.clearBackendBtn) els.clearBackendBtn.addEventListener("click", clearBackend);
   els.previewBtn.addEventListener("click", doPreview);
   els.loadSampleBtn.addEventListener("click", () => {
     els.rawInput.value = SAMPLE;
@@ -294,7 +328,18 @@ bindEvents();
 setStatus("", "info");
 updateButtons();
 refreshStats();
-refreshAttempts();
+refreshAttempts().finally(refreshBackendUI);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

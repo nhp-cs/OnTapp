@@ -1,6 +1,6 @@
 ﻿import { clamp, escapeHtml } from "./lib.js";
 import { getCustomExams } from "./storage.js";
-import { addAttempt } from "./attempts.js";
+import { recordAttempt } from "./recording.js";
 const els = {
   home: document.getElementById("home"),
   quiz: document.getElementById("quiz"),
@@ -238,7 +238,7 @@ function computeScore() {
   return { correct, total };
 }
 
-function submitExam() {
+async function submitExam() {
   const total = questionOrder.length;
   const answered = answeredCount();
   const proceed = answered === total || confirm(`Bạn mới trả lời ${answered}/${total} câu. Vẫn nộp bài?`);
@@ -251,16 +251,16 @@ function submitExam() {
   const durationSec = startedAt && submittedAt ? Math.max(0, Math.round((submittedAt - startedAt) / 1000)) : null;
   const openSource = detectOpenSource();
   if (shouldRecordAttempt()) {
-    addAttempt({
-      examId: activeExam?.id ?? "",
-      examTitle: activeExam?.title ?? "",
+    await recordAttempt({
+      exam_id: activeExam?.id ?? "",
+      exam_title: activeExam?.title ?? "",
       name: participantName,
       correct,
       total: totalScore,
       pct,
-      durationSec,
-      startedAt: startedAt ? startedAt.toISOString() : null,
-      submittedAt: submittedAt.toISOString(),
+      duration_sec: durationSec,
+      started_at: startedAt ? startedAt.toISOString() : null,
+      submitted_at: submittedAt.toISOString(),
       source: openSource,
     });
   }
@@ -396,6 +396,8 @@ async function boot() {
 
 bindEvents();
 boot();
+
+
 
 
 
