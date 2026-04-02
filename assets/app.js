@@ -51,6 +51,31 @@ function showOnly(section) {
   window.scrollTo({ top: 0, behavior: "auto" });
 }
 
+function detectOpenSource() {
+  const ua = String(navigator.userAgent || "");
+  const ref = String(document.referrer || "");
+
+  const uaLower = ua.toLowerCase();
+  const refLower = ref.toLowerCase();
+
+  if (uaLower.includes("zalo") || refLower.includes("zalo.me") || refLower.includes("l.zaloapp.com") || refLower.includes("zalo")) {
+    return "zalo";
+  }
+
+  return "web";
+}
+
+function shouldRecordAttempt() {
+  const params = new URLSearchParams(window.location.search);
+
+  // explicit overrides
+  if (params.get("record") === "1") return true;
+  if (params.get("norecord") === "1" || params.get("nohistory") === "1") return false;
+
+  // auto skip for Zalo in-app browser / Zalo referrer
+  return detectOpenSource() !== "zalo";
+}
+
 async function loadBundledExams() {
   try {
     const res = await fetch("./data/exams.json", { cache: "no-store" });
@@ -229,17 +254,21 @@ function submitExam() {
   const { correct, total: totalScore } = computeScore();
   const pct = Math.round((correct / totalScore) * 100);
   const durationSec = startedAt && submittedAt ? Math.max(0, Math.round((submittedAt - startedAt) / 1000)) : null;
-  addAttempt({
-    examId: activeExam?.id ?? "",
-    examTitle: activeExam?.title ?? "",
-    name: participantName,
-    correct,
-    total: totalScore,
-    pct,
-    durationSec,
-    startedAt: startedAt ? startedAt.toISOString() : null,
-    submittedAt: submittedAt.toISOString(),
-  });
+  const openSource = detectOpenSource();
+  if (shouldRecordAttempt()) {
+    addAttempt({
+      examId: activeExam?.id ?? "",
+      examTitle: activeExam?.title ?? "",
+      name: participantName,
+      correct,
+      total: totalScore,
+      pct,
+      durationSec,
+      startedAt: startedAt ? startedAt.toISOString() : null,
+      submittedAt: submittedAt.toISOString(),
+      source: openSource,
+    });
+  }
   renderResult();
   showOnly(els.result);
 }
@@ -372,6 +401,8 @@ async function boot() {
 
 bindEvents();
 boot();
+
+
 
 
 

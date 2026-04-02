@@ -1,4 +1,4 @@
-import { escapeHtml } from "./lib.js";
+﻿import { escapeHtml } from "./lib.js";
 import { parseExamText } from "./parser.js";
 import { getCustomExams, upsertCustomExam } from "./storage.js";
 import { clearAttempts, getAttempts } from "./attempts.js";
@@ -127,7 +127,8 @@ function refreshAttempts() {
       const pct = Number(a?.pct) || 0;
       const when = formatDateTime(a?.submittedAt || a?.createdAt);
       const dur = formatDuration(a?.durationSec);
-      const meta = [examTitle, when, dur ? `⏱ ${dur}` : ""].filter(Boolean).join(" • ");
+      const src = a?.source ? String(a.source) : "";
+      const meta = [examTitle, src, when, dur ? `⏱ ${dur}` : ""].filter(Boolean).join(" • ");
 
       return `
         <div class="reviewItem">
@@ -294,4 +295,6 @@ setStatus("", "info");
 updateButtons();
 refreshStats();
 refreshAttempts();
+
+
 
