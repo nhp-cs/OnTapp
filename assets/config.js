@@ -24,10 +24,17 @@ function normalizeConfig(cfg) {
   return { url, anonKey };
 }
 
+let memoCfg = normalizeConfig(DEFAULT_SUPABASE);
+
 export function getSupabaseConfig() {
-  const raw = localStorage.getItem(LS_SUPABASE);
-  const cfg = safeJsonParse(raw, null);
-  return normalizeConfig(cfg);
+  // Prefer localStorage (admin can override), but tolerate browsers where storage is blocked.
+  try {
+    const raw = localStorage.getItem(LS_SUPABASE);
+    const cfg = safeJsonParse(raw, null);
+    return normalizeConfig(cfg) || memoCfg;
+  } catch {
+    return memoCfg;
+  }
 }
 
 export function setSupabaseConfig({ url, anonKey }) {
@@ -35,11 +42,23 @@ export function setSupabaseConfig({ url, anonKey }) {
     url: String(url || "").trim(),
     anonKey: String(anonKey || "").trim(),
   };
-  localStorage.setItem(LS_SUPABASE, JSON.stringify(payload));
+
+  memoCfg = normalizeConfig(payload);
+
+  try {
+    localStorage.setItem(LS_SUPABASE, JSON.stringify(payload));
+  } catch {
+    // ignore
+  }
 }
 
 export function clearSupabaseConfig() {
-  localStorage.removeItem(LS_SUPABASE);
+  memoCfg = null;
+  try {
+    localStorage.removeItem(LS_SUPABASE);
+  } catch {
+    // ignore
+  }
 }
 
 async function fetchBundledConfigOnce() {
@@ -61,15 +80,10 @@ async function fetchBundledConfigOnce() {
 }
 
 // Ensure config exists in this browser.
+// Important: still works even if localStorage is blocked (common in some in-app browsers).
 export async function ensureSupabaseConfig() {
-  const local = getSupabaseConfig();
-  if (local) return local;
-
-  const def = normalizeConfig(DEFAULT_SUPABASE);
-  if (def) {
-    setSupabaseConfig(def);
-    return def;
-  }
+  const cur = getSupabaseConfig();
+  if (cur) return cur;
 
   const bundled = await fetchBundledConfigOnce();
   if (!bundled) return null;

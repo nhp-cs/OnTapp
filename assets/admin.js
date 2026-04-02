@@ -153,7 +153,7 @@ async function refreshAttempts() {
       const avgPct = total > 0 ? Math.round(attempts.reduce((acc, a) => acc + (Number(a?.pct) || 0), 0) / total) : 0;
       const bestPct = total > 0 ? Math.max(...attempts.map((a) => Number(a?.pct) || 0)) : 0;
 
-      els.attemptsLine.textContent = `${backend} • ${total} lượt • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
+      els.attemptsLine.textContent = `${backend} • ${total} lượt${res.count != null ? "/" + res.count : ""} • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
     }
   }
 
@@ -358,6 +358,7 @@ setStatus("", "info");
 updateButtons();
 refreshStats();
 refreshAttempts().finally(refreshBackendUI);
+
 
 
 

@@ -37,6 +37,15 @@ export async function supabaseInsertAttempt(attempt) {
   return { ok: true };
 }
 
+function parseContentRangeCount(header) {
+  // Format: 0-9/123 or */0
+  if (!header) return null;
+  const m = String(header).match(/\/(\d+)\s*$/);
+  if (!m) return null;
+  const n = Number(m[1]);
+  return Number.isFinite(n) ? n : null;
+}
+
 export async function supabaseListAttempts({ limit = 30 } = {}) {
   const cfg = await ensureSupabaseConfig();
   if (!cfg) return { ok: false, reason: "no_config", attempts: [] };
@@ -46,14 +55,18 @@ export async function supabaseListAttempts({ limit = 30 } = {}) {
     String(limit),
   )}`;
 
-  const res = await fetch(endpoint, { headers: buildHeaders(cfg.anonKey) });
+  const res = await fetch(endpoint, {
+    headers: buildHeaders(cfg.anonKey, { Prefer: "count=exact" }),
+  });
+
   if (!res.ok) {
     const text = await res.text().catch(() => "");
     return { ok: false, reason: "http", status: res.status, detail: text, attempts: [] };
   }
 
   const attempts = await res.json().catch(() => []);
-  return { ok: true, attempts: Array.isArray(attempts) ? attempts : [] };
+  const count = parseContentRangeCount(res.headers.get("content-range"));
+  return { ok: true, attempts: Array.isArray(attempts) ? attempts : [], count };
 }
 
 export async function supabaseClearAttempts() {
@@ -63,7 +76,10 @@ export async function supabaseClearAttempts() {
   const url = normalizeUrl(cfg.url);
   // delete all rows (requires RLS policy permitting delete; for safety we won't enable this by default)
   const endpoint = `${url}/rest/v1/attempts?id=gt.0`;
-  const res = await fetch(endpoint, { method: "DELETE", headers: buildHeaders(cfg.anonKey, { Prefer: "return=minimal" }) });
+  const res = await fetch(endpoint, {
+    method: "DELETE",
+    headers: buildHeaders(cfg.anonKey, { Prefer: "return=minimal" }),
+  });
   if (!res.ok) {
     const text = await res.text().catch(() => "");
     return { ok: false, reason: "http", status: res.status, detail: text };
