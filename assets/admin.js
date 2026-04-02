@@ -130,80 +130,86 @@ async function refreshStats() {
 }
 
 async function refreshAttempts() {
-  const res = await listAttempts(30);
-  const attempts = res.attempts || [];
-  const total = attempts.length;
+  try {
+    const res = await listAttempts(30);
+    const attempts = res.attempts || [];
+    const total = attempts.length;
+    const backend = attemptsBackend();
 
-  const backend = attemptsBackend();
+    if (els.attemptsLine) {
+      if (!res.ok) {
+        const status = res.error?.status ?? res.status ?? "";
+        const reason = res.error?.reason ?? res.reason ?? "";
+        els.attemptsLine.textContent = `${backend} • lỗi ${status || "?"}${reason ? ` (${reason})` : ""}`;
+      } else {
+        const last =
+          attempts[0]?.submitted_at ||
+          attempts[0]?.submittedAt ||
+          attempts[0]?.created_at ||
+          attempts[0]?.createdAt ||
+          null;
+        const lastText = last ? ` • Gần nhất: ${formatDateTime(last)}` : "";
 
-  if (els.attemptsLine) {
+        const avgPct = total > 0 ? Math.round(attempts.reduce((acc, a) => acc + (Number(a?.pct) || 0), 0) / total) : 0;
+        const bestPct = total > 0 ? Math.max(...attempts.map((a) => Number(a?.pct) || 0)) : 0;
+
+        els.attemptsLine.textContent = `${backend} • ${total} lượt${res.count != null ? "/" + res.count : ""} • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
+      }
+    }
+
+    if (!els.attemptsList) return;
+
     if (!res.ok) {
       const status = res.error?.status ?? res.status ?? "";
-      const reason = res.error?.reason ?? res.reason ?? "";
-      els.attemptsLine.textContent = `${backend} • lỗi ${status || "?"}${reason ? ` (${reason})` : ""}`;
-    } else {
-      const last =
-        attempts[0]?.submitted_at ||
-        attempts[0]?.submittedAt ||
-        attempts[0]?.created_at ||
-        attempts[0]?.createdAt ||
-        null;
-      const lastText = last ? ` • Gần nhất: ${formatDateTime(last)}` : "";
+      const detail = String(res.error?.detail ?? res.detail ?? "").trim();
+      const msg = [
+        `Không đọc được lượt thi từ Supabase (status ${status || "?"}).`,
+        detail ? `Chi tiết: ${detail}` : "",
+        "Kiểm tra: table `attempts` có bật RLS + có policy SELECT cho role `anon`.",
+        "Ngoài ra kiểm tra table có được expose qua API và đúng schema `public`.",
+      ]
+        .filter(Boolean)
+        .join("\n");
 
-      const avgPct = total > 0 ? Math.round(attempts.reduce((acc, a) => acc + (Number(a?.pct) || 0), 0) / total) : 0;
-      const bestPct = total > 0 ? Math.max(...attempts.map((a) => Number(a?.pct) || 0)) : 0;
-
-      els.attemptsLine.textContent = `${backend} • ${total} lượt${res.count != null ? "/" + res.count : ""} • TB: ${avgPct}% • Cao nhất: ${bestPct}%${lastText}`;
+      els.attemptsList.innerHTML = `<pre class="preBox">${escapeHtml(msg)}</pre>`;
+      return;
     }
-  }
 
-  if (!els.attemptsList) return;
+    if (total === 0) {
+      els.attemptsList.innerHTML = "";
+      return;
+    }
 
-  if (!res.ok) {
-    const status = res.error?.status ?? res.status ?? "";
-    const detail = String(res.error?.detail ?? res.detail ?? "").trim();
-    const msg = [
-      `Không đọc được lượt thi từ Supabase (status ${status || "?"}).`,
-      detail ? `Chi tiết: ${detail}` : "",
-      "Kiểm tra: table `attempts` có bật RLS + có policy SELECT cho role `anon`.",
-      "Ngoài ra kiểm tra table có được expose qua API và đúng schema `public`.",
-    ]
-      .filter(Boolean)
-      .join("\n");
+    els.attemptsList.innerHTML = attempts
+      .map((a) => {
+        const name = a?.name ? String(a.name) : "—";
+        const examTitle = a?.exam_title ? String(a.exam_title) : a?.examTitle ? String(a.examTitle) : "—";
+        const correct = Number(a?.correct) || 0;
+        const tot = Number(a?.total) || 0;
+        const pct = Number(a?.pct) || 0;
+        const when = formatDateTime(a?.submitted_at || a?.submittedAt || a?.created_at || a?.createdAt);
+        const dur = formatDuration(a?.duration_sec ?? a?.durationSec);
+        const src = a?.source ? String(a.source) : "";
+        const meta = [examTitle, src, when, dur ? `⏱ ${dur}` : ""].filter(Boolean).join(" • ");
 
-    els.attemptsList.innerHTML = `<pre class="preBox">${escapeHtml(msg)}</pre>`;
-    return;
-  }
-
-  if (total === 0) {
-    els.attemptsList.innerHTML = "";
-    return;
-  }
-
-  els.attemptsList.innerHTML = attempts
-    .map((a) => {
-      const name = a?.name ? String(a.name) : "—";
-      const examTitle = a?.exam_title ? String(a.exam_title) : a?.examTitle ? String(a.examTitle) : "—";
-      const correct = Number(a?.correct) || 0;
-      const tot = Number(a?.total) || 0;
-      const pct = Number(a?.pct) || 0;
-      const when = formatDateTime(a?.submitted_at || a?.submittedAt || a?.created_at || a?.createdAt);
-      const dur = formatDuration(a?.duration_sec ?? a?.durationSec);
-      const src = a?.source ? String(a.source) : "";
-      const meta = [examTitle, src, when, dur ? `⏱ ${dur}` : ""].filter(Boolean).join(" • ");
-
-      return `
-        <div class="reviewItem">
-          <div class="reviewItem__head">
-            <div class="reviewItem__title">${escapeHtml(name)} — ${correct}/${tot} (${pct}%)</div>
-            <span class="badge">${escapeHtml(examTitle)}</span>
+        return `
+          <div class="reviewItem">
+            <div class="reviewItem__head">
+              <div class="reviewItem__title">${escapeHtml(name)} — ${correct}/${tot} (${pct}%)</div>
+              <span class="badge">${escapeHtml(examTitle)}</span>
+            </div>
+            <div class="muted small">${escapeHtml(meta)}</div>
           </div>
-          <div class="muted small">${escapeHtml(meta)}</div>
-        </div>
-      `;
-    })
-    .join("");
-}\nasync function exportAttempts() {
+        `;
+      })
+      .join("");
+  } catch (err) {
+    const msg = `Lỗi tải lượt thi: ${err?.message ?? String(err)}`;
+    if (els.attemptsLine) els.attemptsLine.textContent = msg;
+    if (els.attemptsList) els.attemptsList.innerHTML = `<pre class="preBox">${escapeHtml(msg)}</pre>`;
+  }
+}
+async function exportAttempts() {
   const res = await listAttempts(1000);
   const attempts = res.attempts || [];
   const blob = new Blob([JSON.stringify(attempts, null, 2)], { type: "application/json;charset=utf-8" });
@@ -358,6 +364,8 @@ setStatus("", "info");
 updateButtons();
 refreshStats();
 refreshAttempts().finally(refreshBackendUI);
+
+
 
 
 

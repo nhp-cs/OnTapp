@@ -24,11 +24,16 @@ export async function supabaseInsertAttempt(attempt) {
   const url = normalizeUrl(cfg.url);
   const endpoint = `${url}/rest/v1/attempts`;
 
-  const res = await fetch(endpoint, {
-    method: "POST",
-    headers: buildHeaders(cfg.anonKey, { Prefer: "return=minimal" }),
-    body: JSON.stringify(attempt),
-  });
+  let res;
+  try {
+    res = await fetch(endpoint, {
+      method: "POST",
+      headers: buildHeaders(cfg.anonKey, { Prefer: "return=minimal" }),
+      body: JSON.stringify(attempt),
+    });
+  } catch (err) {
+    return { ok: false, reason: "network", detail: err?.message ?? String(err) };
+  }
 
   if (!res.ok) {
     const text = await res.text().catch(() => "");
@@ -55,9 +60,14 @@ export async function supabaseListAttempts({ limit = 30 } = {}) {
     String(limit),
   )}`;
 
-  const res = await fetch(endpoint, {
-    headers: buildHeaders(cfg.anonKey, { Prefer: "count=exact" }),
-  });
+  let res;
+  try {
+    res = await fetch(endpoint, {
+      headers: buildHeaders(cfg.anonKey, { Prefer: "count=exact" }),
+    });
+  } catch (err) {
+    return { ok: false, reason: "network", detail: err?.message ?? String(err), attempts: [] };
+  }
 
   if (!res.ok) {
     const text = await res.text().catch(() => "");
@@ -76,10 +86,17 @@ export async function supabaseClearAttempts() {
   const url = normalizeUrl(cfg.url);
   // delete all rows (requires RLS policy permitting delete; for safety we won't enable this by default)
   const endpoint = `${url}/rest/v1/attempts?id=gt.0`;
-  const res = await fetch(endpoint, {
-    method: "DELETE",
-    headers: buildHeaders(cfg.anonKey, { Prefer: "return=minimal" }),
-  });
+
+  let res;
+  try {
+    res = await fetch(endpoint, {
+      method: "DELETE",
+      headers: buildHeaders(cfg.anonKey, { Prefer: "return=minimal" }),
+    });
+  } catch (err) {
+    return { ok: false, reason: "network", detail: err?.message ?? String(err) };
+  }
+
   if (!res.ok) {
     const text = await res.text().catch(() => "");
     return { ok: false, reason: "http", status: res.status, detail: text };
