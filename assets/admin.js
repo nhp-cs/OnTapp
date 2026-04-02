@@ -174,9 +174,21 @@ async function refreshAttempts() {
       els.attemptsList.innerHTML = `<pre class="preBox">${escapeHtml(msg)}</pre>`;
       return;
     }
-
     if (total === 0) {
-      els.attemptsList.innerHTML = "";
+      if (backend === "supabase") {
+        const msg = [
+          "Chưa thấy lượt thi nào.",
+          "",
+          "Nếu bạn đã thấy dữ liệu trong Supabase Dashboard nhưng ở đây vẫn trống:",
+          "- Table `attempts` đang bật RLS và chưa có policy SELECT cho role `anon` (client dùng anon key).",
+          "- Hoặc policy SELECT đang lọc hết rows (ví dụ theo user_id).",
+          "",
+          "Gợi ý nhanh: tạo policy SELECT cho `anon` (hoặc dùng service role key ở backend server, không dùng trên client).",
+        ].join("\n");
+        els.attemptsList.innerHTML = `<pre class="preBox">${escapeHtml(msg)}</pre>`;
+      } else {
+        els.attemptsList.innerHTML = "";
+      }
       return;
     }
 
