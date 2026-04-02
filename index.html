@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnTap — Ôn tập trắc nghiệm</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">OT</div>
+        <div class="brand__text">
+          <div class="brand__title">OnTap</div>
+          <div class="brand__subtitle"></div>
+        </div>
+      </div>
+      <nav class="nav"></nav>
+    </header>
+
+    <main class="container">
+      <section class="card" id="home">
+        <div class="card__header">
+          <h1 class="h1" id="examTitle">Đề trắc nghiệm</h1>
+        </div>
+
+        <div style="padding: 0 18px 18px">
+          <label class="label" for="nameInput">Tên của bạn</label>
+          <input class="input" id="nameInput" placeholder="Nhập tên để bắt đầu" maxlength="60" autocomplete="name" />
+          <div class="help" id="nameHelp"></div>
+
+          <div class="divider"></div>
+
+          <div class="row row--end">
+            <button class="btn" id="startBtn" type="button">Bắt đầu</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card hidden" id="quiz">
+        <div class="quizTop">
+          <div>
+            <div class="pill" id="quizMeta"></div>
+            <h2 class="h2" id="quizTitle"></h2>
+          </div>
+          <div class="quizTop__actions">
+            <button class="btn btn--ghost" id="backHomeBtn" type="button">Về trang đầu</button>
+            <button class="btn btn--danger" id="submitBtn" type="button">Nộp bài</button>
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="progress__bar" id="progressBar"></div>
+        </div>
+
+        <div class="grid grid--quiz">
+          <aside class="card card--sub" id="navPanel">
+            <div class="card__header">
+              <div class="h3">Câu hỏi</div>
+              <div class="muted small" id="navHint"></div>
+            </div>
+            <div class="qnav" id="qnav"></div>
+          </aside>
+
+          <section class="card card--sub" id="questionPanel">
+            <div class="qhead">
+              <div class="qindex" id="qIndex"></div>
+              <div class="qtext" id="qText"></div>
+            </div>
+            <div class="options" id="options"></div>
+            <div class="row row--between" style="padding: 0 18px 18px">
+              <button class="btn btn--ghost" id="prevBtn" type="button">← Trước</button>
+              <button class="btn" id="nextBtn" type="button">Tiếp →</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="card hidden" id="result">
+        <div class="card__header">
+          <div class="pill" id="resultMeta"></div>
+          <h2 class="h2">Kết quả</h2>
+          <div class="score" id="scoreLine"></div>
+          <div class="row row--wrap">
+            <button class="btn" id="reviewTopBtn" type="button">Xem đáp án</button>
+            <button class="btn btn--ghost" id="retryBtn" type="button">Làm lại</button>
+            <button class="btn btn--ghost" id="newExamBtn" type="button">Trang đầu</button>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="review" id="review"></div>
+      </section>
+    </main>
+
+    <footer class="container footer"></footer>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

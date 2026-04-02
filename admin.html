@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnTap — Admin import đề</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">OT</div>
+        <div class="brand__text">
+          <div class="brand__title">OnTap</div>
+          <div class="brand__subtitle"></div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="link" href="./index.html">Trang làm bài</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card" id="statsCard">
+        <div class="card__header">
+          <h1 class="h1">Admin</h1>
+          <div class="muted small" id="statsLine"></div>
+        </div>
+      </section>
+
+      <section class="card" id="attemptsCard" style="margin-top: 14px">
+        <div class="card__header">
+          <h2 class="h2">Lượt thi</h2>
+          <div class="muted small" id="attemptsLine"></div>
+          <div class="row row--wrap" style="margin-top: 10px">
+            <button class="btn btn--ghost" id="exportAttemptsBtn" type="button">Export</button>
+            <button class="btn btn--danger" id="clearAttemptsBtn" type="button">Xoá</button>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="review" id="attemptsList"></div>
+      </section>
+
+      <section class="card">
+        <div class="card__header">
+          <h2 class="h2">Import đề</h2>
+        </div>
+
+        <div style="padding: 0 18px 18px">
+          <div class="grid grid--2">
+            <div>
+              <label class="label" for="examTitle">Tên đề (tuỳ chọn)</label>
+              <input class="input" id="examTitle" placeholder="Ví dụ: Toán 12 — Chương 1" maxlength="120" />
+            </div>
+            <div>
+              <label class="label" for="examDesc">Mô tả (tuỳ chọn)</label>
+              <input class="input" id="examDesc" placeholder="Ví dụ: 20 câu, 15 phút" maxlength="180" />
+            </div>
+          </div>
+
+          <label class="label" for="rawInput">Văn bản đề thi</label>
+          <textarea
+            class="textarea"
+            id="rawInput"
+            rows="16"
+            spellcheck="false"
+            placeholder="# (tuỳ chọn) Tiêu đề đề
+
+Câu hỏi 1 là gì?
+A. Đáp án A
+B. Đáp án B
+C. Đáp án C
+D. Đáp án D
+
+Câu hỏi 2 là gì?
+A. ...
+B. ...
+C. ...
+
+ĐÁP ÁN
+B
+C"
+          ></textarea>
+
+          <div class="row row--wrap">
+            <button class="btn" id="previewBtn" type="button">Xem preview</button>
+            <button class="btn btn--ghost" id="loadSampleBtn" type="button">Nạp mẫu</button>
+            <button class="btn btn--danger" id="clearBtn" type="button">Xoá nội dung</button>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="row row--wrap">
+            <button class="btn" id="saveBtn" type="button" disabled>Lưu đề vào máy này</button>
+            <button class="btn btn--ghost" id="exportBtn" type="button" disabled>Export JSON</button>
+            <button class="btn btn--ghost" id="copyJsonBtn" type="button" disabled>Copy JSON</button>
+          </div>
+
+          <div class="help" id="statusLine" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="card hidden" id="previewCard" style="margin-top: 14px">
+        <div class="card__header">
+          <h2 class="h2">Preview</h2>
+          <div class="muted small" id="previewMeta"></div>
+        </div>
+        <div class="divider"></div>
+        <div class="review" id="preview"></div>
+      </section>
+
+      <div style="height: 14px"></div>
+    </main>
+
+    <script type="module" src="./assets/admin.js"></script>
+  </body>
+</html>

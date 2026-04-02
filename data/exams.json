@@ -1,0 +1,554 @@
+[
+  {
+    "id": "exam_do_hoa_may_tinh",
+    "title": "Đồ Họa Máy Tính",
+    "description": "40 câu",
+    "source": "builtin",
+    "questions": [
+      {
+        "id": "dht_q01",
+        "text": "Trong mô hình Shading của Gouraud, cường độ sáng tại một điểm nằm giữa đoạn thẳng nối hai đỉnh V1 (độ sáng I1=0.8) và V2 (độ sáng I2=0.4) được tính bằng nội suy tuyến tính. Tại trung điểm của đoạn V1V2, cường độ sáng là:",
+        "options": [
+          { "key": "A", "text": "1.2" },
+          { "key": "B", "text": "0.8" },
+          { "key": "C", "text": "0.4" },
+          { "key": "D", "text": "0.6" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q02",
+        "text": "Trong đồ họa 3D, sự khác biệt giữa Point Cloud và Polygon Mesh là gì?",
+        "options": [
+          { "key": "A", "text": "Point Cloud luôn yêu cầu bộ nhớ lưu trữ lớn hơn Polygon Mesh." },
+          { "key": "B", "text": "Point Cloud chứa thông tin về độ bóng và vân bề mặt vật liệu." },
+          { "key": "C", "text": "Mesh định nghĩa sự kết nối giữa các điểm để tạo thành bề mặt." },
+          { "key": "D", "text": "Mesh chỉ bao gồm các điểm rời rạc không có cấu trúc liên kết." }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q03",
+        "text": "Để hình ảnh 3D không bị bóp méo (Distortion) khi người dùng thay đổi kích thước cửa sổ ứng dụng, tham số nào trong ma trận Perspective Projection cần được tái tính toán và cập nhật liên tục?",
+        "options": [
+          { "key": "A", "text": "Khoảng cách tới mặt phẳng cắt gần (Near Clipping Plane)" },
+          { "key": "B", "text": "Tỷ lệ khung hình (Aspect Ratio) giữa chiều rộng và chiều cao màn hình" },
+          { "key": "C", "text": "Khoảng cách tới mặt phẳng cắt xa (Far Clipping Plane)" },
+          { "key": "D", "text": "Góc nhìn mở rộng (Field of View - FOVy)" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q04",
+        "text": "Hiện tượng Z-fighting (nhấp nháy đa giác đồng phẳng) phản ánh sự hạn chế nào trong kiến trúc đồ họa?",
+        "options": [
+          { "key": "A", "text": "Xung đột cực tính giữa hai luồng ánh sáng định hướng chiếu đồng thời lên bề mặt vật thể" },
+          { "key": "B", "text": "Phép chia phối cảnh (Perspective Divide) tạo ra giá trị w âm làm sai lệch tọa độ" },
+          { "key": "C", "text": "Thiếu hụt độ chính xác của Depth Buffer khi phân giải chiều sâu cho hai mặt phẳng quá gần nhau" },
+          { "key": "D", "text": "Back-face Culling vô tình cắt bỏ các pháp tuyến có hệ số góc bằng 0" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q05",
+        "text": "Phương pháp biểu diễn mặt ẩn (Implicit Surfaces) mang lại lợi thế kỹ thuật nào trong đồ họa 3D?",
+        "options": [
+          { "key": "A", "text": "Tối ưu hóa hiển thị thời gian thực lên màn hình raster với tốc độ khung hình cao" },
+          { "key": "B", "text": "Tự động chuyển đổi trực tiếp thành Polygon Mesh mà không tốn chi phí tính toán" },
+          { "key": "C", "text": "Tiết kiệm bộ nhớ nội suy so với Point Cloud nhờ Scene Graph" },
+          { "key": "D", "text": "Mô tả bề mặt toán học chính xác và hỗ trợ kiểm tra trong/ngoài của một điểm dễ dàng" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q06",
+        "text": "Tại một bề mặt, hệ số phản xạ môi trường ka=0.3, cường độ ánh sáng môi trường Ia=0.8. Cường độ ánh sáng thành phần Ambient theo mô hình chiếu sáng cơ bản là bao nhiêu?",
+        "options": [
+          { "key": "A", "text": "1.1" },
+          { "key": "B", "text": "0.5" },
+          { "key": "C", "text": "2.67" },
+          { "key": "D", "text": "0.24" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q07",
+        "text": "Nguyên lý nào giúp thuật toán DDA đồng bộ hóa việc tính toán tọa độ điểm ảnh liên tiếp trên lưới quét dòng?",
+        "options": [
+          { "key": "A", "text": "Xoay hệ trục Affine sao cho đoạn thẳng luôn nằm trên đường phân giác" },
+          { "key": "B", "text": "Cập nhật độ lớn đoạn thẳng sau mỗi lần lặp để tránh tràn bộ nhớ đệm" },
+          { "key": "C", "text": "Căn cứ vào độ dốc lớn nhất để chọn trục bước tiến đơn vị nhằm đảm bảo quỹ đạo không bị gián đoạn" },
+          { "key": "D", "text": "Chỉ dùng dịch bit và cộng số nguyên thay cho dấu phẩy động" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q08",
+        "text": "Thuật ngữ Voxel trong mô hình hóa không gian 3D được định nghĩa như thế nào?",
+        "options": [
+          { "key": "A", "text": "Phần tử thể tích lập phương mang thông tin màu sắc và độ đậm đặc trong không gian 3D" },
+          { "key": "B", "text": "Điểm ảnh 2D được nội suy chiều sâu để tạo hiệu ứng nổi" },
+          { "key": "C", "text": "Tập hợp các đỉnh rời rạc không có cấu trúc liên kết thu thập từ máy quét" },
+          { "key": "D", "text": "Đa giác cơ sở dùng để xây dựng bề mặt cong của vật thể" }
+        ],
+        "answer": "A",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q09",
+        "text": "Trong mô hình chiếu sáng Phong, thành phần Ambient đại diện cho điều gì?",
+        "options": [
+          { "key": "A", "text": "Tia sáng trực tiếp từ nguồn sáng điểm tạo ra vùng sáng chói" },
+          { "key": "B", "text": "Ánh sáng nền phản xạ từ môi trường lên mọi bề mặt vật thể" },
+          { "key": "C", "text": "Độ bóng của vật liệu phụ thuộc vào vị trí của người quan sát" },
+          { "key": "D", "text": "Sự tán xạ ánh sáng đồng đều khi va chạm với bề mặt thô ráp" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q10",
+        "text": "Để đạt hiệu ứng bề mặt nhựa bóng (Plastic) hoặc kim loại (Metal) với các điểm sáng chói (Highlights) chân thực, thành phần nào trong Local Illumination Model đóng vai trò quyết định?",
+        "options": [
+          { "key": "A", "text": "Phản xạ gương (Specular Reflection)" },
+          { "key": "B", "text": "Phản xạ khuếch tán (Diffuse Reflection)" },
+          { "key": "C", "text": "Suy giảm theo khoảng cách (Attenuation)" },
+          { "key": "D", "text": "Ánh sáng môi trường (Ambient Light)" }
+        ],
+        "answer": "A",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q11",
+        "text": "Trong biến đổi Affine, thành phần nào không thay đổi sau phép tịnh tiến?",
+        "options": [
+          { "key": "A", "text": "Khoảng cách từ gốc tọa độ đến tâm của đối tượng" },
+          { "key": "B", "text": "Vector pháp tuyến và độ dài của các cạnh đối tượng" },
+          { "key": "C", "text": "Tọa độ tuyệt đối của các đỉnh cấu thành vật thể" },
+          { "key": "D", "text": "Ma trận biến đổi kết hợp trong hệ tọa độ Descartes" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q12",
+        "text": "Khi lập trình cơ chế Picking (chọn vật thể bằng chuột) trên màn hình 2D, giải pháp Unprojection nào là chính xác để xác định tia (Ray) tương tác trong World Space?",
+        "options": [
+          { "key": "A", "text": "Chuyển đổi tọa độ từ Screen Space sang NDC và nhân với ma trận nghịch đảo (Mproj·Mview)−1" },
+          { "key": "B", "text": "Lấy mẫu tọa độ Fragment trong Frame Buffer rồi chiếu ngược về Camera" },
+          { "key": "C", "text": "Chuyển đổi Screen Space sang World Space và nhân với ma trận Model" },
+          { "key": "D", "text": "Ánh xạ trực tiếp tọa độ Camera sang màn hình qua Viewport Transform" }
+        ],
+        "answer": "A",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q13",
+        "text": "Trong Viewport Transform, thao tác đảo chiều trục Y được thực hiện nhằm mục đích gì?",
+        "options": [
+          { "key": "A", "text": "Chuẩn hóa tọa độ về dải [-1, 1] trước khi vào pipeline" },
+          { "key": "B", "text": "Khắc phục sự ngược hướng giữa hệ tọa độ Descartes và hệ tọa độ màn hình" },
+          { "key": "C", "text": "Dời gốc tọa độ từ tâm thế giới về góc dưới trái vùng đệm hiển thị" },
+          { "key": "D", "text": "Bù trừ sai lệch tỉ lệ khung hình vật lý của thiết bị" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q14",
+        "text": "Trong biến đổi Affine 3D, để quay một điểm quanh trục Z một góc θ, ma trận biến đổi tương ứng là gì?",
+        "options": [
+          { "key": "A", "text": "[[cosθ, sinθ, 0, 0], [-sinθ, cosθ, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]" },
+          { "key": "B", "text": "[[cosθ, -sinθ, 0, 0], [sinθ, cosθ, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]" },
+          { "key": "C", "text": "[[cosθ, 0, -sinθ, 0], [0, 1, 0, 0], [sinθ, 0, cosθ, 0], [0, 0, 0, 1]]" },
+          { "key": "D", "text": "[[1, 0, 0, 0], [0, cosθ, sinθ, 0], [0, -sinθ, cosθ, 0], [0, 0, 0, 1]]" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q15",
+        "text": "Phép chiếu phối cảnh (Perspective Projection) có đặc điểm nào sau đây?",
+        "options": [
+          { "key": "A", "text": "Giữ nguyên tính song song của các đường thẳng trong không gian" },
+          { "key": "B", "text": "Luôn duy trì tỉ lệ kích thước thực của đối tượng trên màn hình 2D" },
+          { "key": "C", "text": "Các vật thể ở xa có kích thước nhỏ hơn các vật thể ở gần" },
+          { "key": "D", "text": "Không phụ thuộc vào vị trí đặt camera và khoảng cách tiêu cự" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q16",
+        "text": "Cơ chế hoạt động cốt lõi của thuật toán Z-buffer trong khử mặt khuất (Hidden Surface Removal) là gì?",
+        "options": [
+          { "key": "A", "text": "Tính tích vô hướng giữa pháp tuyến mặt và hướng nhìn của camera" },
+          { "key": "B", "text": "Chia đệ quy không gian quan sát bằng Octree" },
+          { "key": "C", "text": "Sắp xếp đa giác theo chiều sâu từ xa đến gần trước khi vẽ" },
+          { "key": "D", "text": "So sánh độ sâu mảnh điểm ảnh mới với độ sâu đang lưu tại tọa độ đó trong Depth Buffer" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q17",
+        "text": "Trong hệ tọa độ màn hình (Screen Space) có độ phân giải 1024×768, điểm ảnh ở góc dưới bên phải có tọa độ là:",
+        "options": [
+          { "key": "A", "text": "(1023, 0)" },
+          { "key": "B", "text": "(1024, 768)" },
+          { "key": "C", "text": "(0, 0)" },
+          { "key": "D", "text": "(1023, 767)" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q18",
+        "text": "Phép biến đổi co giãn không đồng nhất (Non-uniform Scaling) trong không gian 3D gây ra tác động phụ gì đối với lưới hình học?",
+        "options": [
+          { "key": "A", "text": "Đảo ngược hoàn toàn tính chất lồi lõm của toàn bộ khối CSG" },
+          { "key": "B", "text": "Thay đổi thứ tự góc quay Euler về trạng thái khóa trục Gimbal Lock" },
+          { "key": "C", "text": "Làm biến dạng vector pháp tuyến, cần nhân với ma trận chuyển vị nghịch đảo (inverse transpose)" },
+          { "key": "D", "text": "Làm cong mặt tam giác thành bề mặt bậc hai không thể rasterize" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q19",
+        "text": "Cấu trúc cây phân chia không gian nhị phân (BSP Trees) tối ưu hóa pipeline đồ họa thông qua cơ chế nào?",
+        "options": [
+          { "key": "A", "text": "Tính toán độ rọi nguồn sáng lên từng bề mặt đa giác" },
+          { "key": "B", "text": "Chia nhỏ bề mặt tham số thành hàng ngàn tam giác để tăng tốc rasterization" },
+          { "key": "C", "text": "Loại bỏ hoàn toàn đa giác nằm ngoài mặt phẳng cắt xa của frustum" },
+          { "key": "D", "text": "Xác định thứ tự vẽ từ sau ra trước mà không phụ thuộc vào Z-buffer" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q20",
+        "text": "Vai trò của các điểm điều khiển (Control Points) trong đường cong Bézier là gì?",
+        "options": [
+          { "key": "A", "text": "Các tham số dùng để tính độ dốc tại tâm của đường cong" },
+          { "key": "B", "text": "Tập hợp các pixel dùng để hiển thị đường cong trên màn hình" },
+          { "key": "C", "text": "Các điểm mà đường cong bắt buộc phải đi qua theo thứ tự" },
+          { "key": "D", "text": "Xác định hình dáng và độ cong của đường cong thông qua đa thức Bernstein" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q21",
+        "text": "Điểm khác biệt mang tính chất vật lý giữa Displacement Mapping và Normal Mapping là gì?",
+        "options": [
+          { "key": "A", "text": "Displacement chỉ dùng cho đồ họa vector, Normal dùng cho raster" },
+          { "key": "B", "text": "Displacement thực sự thay đổi vị trí đỉnh hình học, Normal chỉ thay đổi pháp tuyến khi tính sáng" },
+          { "key": "C", "text": "Displacement áp dụng màu bề mặt, Normal tạo phản xạ môi trường gương" },
+          { "key": "D", "text": "Displacement ít tốn tài nguyên, Normal yêu cầu phần cứng chuyên dụng" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q22",
+        "text": "Trong thuật toán Midpoint vẽ đường tròn bán kính R=10, tại bước khởi tạo với điểm đầu tiên (0,10), giá trị quyết định p1 được tính bằng bao nhiêu?",
+        "options": [
+          { "key": "A", "text": "5/4 − R = −8.75" },
+          { "key": "B", "text": "3 − 2R = −17" },
+          { "key": "C", "text": "1.25 − R = −8.25" },
+          { "key": "D", "text": "1 − R = −9" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q23",
+        "text": "Khi áp dụng Texture Mapping với chế độ Repeat, nếu tọa độ UV của một đỉnh là (2.3, 1.7), hệ thống sẽ lấy mẫu tại tọa độ nào trên ảnh texture?",
+        "options": [
+          { "key": "A", "text": "(0.5, 0.5)" },
+          { "key": "B", "text": "(0.3, 0.7)" },
+          { "key": "C", "text": "(1.0, 1.0)" },
+          { "key": "D", "text": "(2.0, 1.0)" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q24",
+        "text": "Phân biệt đặc tính kỹ thuật cốt lõi giữa đồ họa Vector và đồ họa Raster?",
+        "options": [
+          { "key": "A", "text": "Vector phụ thuộc độ phân giải thiết bị, Raster giữ nét khi phóng to" },
+          { "key": "B", "text": "Vector dùng voxel 3D, Raster dùng phân cấp đa giác" },
+          { "key": "C", "text": "Vector luôn yêu cầu dung lượng lớn hơn Raster" },
+          { "key": "D", "text": "Vector lưu bằng phương trình toán học, Raster lưu ma trận điểm ảnh" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q25",
+        "text": "Kỹ thuật Mipmap trong Texture Mapping được thiết kế nhằm giải quyết trực tiếp bài toán nào?",
+        "options": [
+          { "key": "A", "text": "Bù đắp thiếu hụt quang năng tại góc khuất trên bề mặt" },
+          { "key": "B", "text": "Khởi tạo kết cấu vật liệu từ nhiễu Perlin Noise" },
+          { "key": "C", "text": "Giảm Aliasing và tối ưu truy xuất khi vật thể ở xa camera" },
+          { "key": "D", "text": "Chuyển dữ liệu specular sang bản đồ pháp tuyến" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q26",
+        "text": "Phép ánh xạ từ hệ tọa độ toán học sang hệ tọa độ màn hình (Screen Space) bắt buộc xử lý thao tác nào?",
+        "options": [
+          { "key": "A", "text": "Đảo chiều trục X để nhất quán với hệ bàn tay trái" },
+          { "key": "B", "text": "Đảo chiều trục Y do quy ước quét dòng màn hình từ trên xuống dưới" },
+          { "key": "C", "text": "Đảo chiều trục W để đưa tọa độ thuần nhất về Descartes" },
+          { "key": "D", "text": "Đảo chiều trục Z để nền không đè lên tiền cảnh" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q27",
+        "text": "Đặc điểm nội suy của bộ lọc Bilinear Interpolation khi lấy mẫu texture là gì?",
+        "options": [
+          { "key": "A", "text": "Lấy màu của texel gần nhất với tọa độ UV" },
+          { "key": "B", "text": "Nội suy tuyến tính giữa hai mức Mipmap liền kề" },
+          { "key": "C", "text": "Tính trung bình có trọng số của 4 texel gần nhất" },
+          { "key": "D", "text": "Dùng đạo hàm bậc hai để tính dốc biến thiên màu" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q28",
+        "text": "Bản chất toán học của phép chia phối cảnh (Perspective Divide) cho thành phần w mang lại hiệu ứng thị giác nào?",
+        "options": [
+          { "key": "A", "text": "Chuyển đổi cường độ sáng từ RGB sang HSV" },
+          { "key": "B", "text": "Loại bỏ mặt có pháp tuyến ngược hướng quan sát" },
+          { "key": "C", "text": "Cắt xén mảnh vỡ ngoài giới hạn frustum" },
+          { "key": "D", "text": "Thu nhỏ vật thể xa và phóng to vật thể gần so với camera" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q29",
+        "text": "Trong Backface Culling, mặt phẳng có pháp tuyến N(0,0,1) và vector hướng nhìn V(0,0,−1). Giá trị N·V là:",
+        "options": [
+          { "key": "A", "text": "0" },
+          { "key": "B", "text": "1" },
+          { "key": "C", "text": "0.5" },
+          { "key": "D", "text": "−1" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q30",
+        "text": "Thuật toán tô màu đa giác quét dòng (Scanline Polygon Fill) xác định vùng màu bên trong đối tượng theo phương pháp nào?",
+        "options": [
+          { "key": "A", "text": "Lan truyền màu từ điểm hạt giống bên trong đến biên" },
+          { "key": "B", "text": "Tìm giao điểm dòng quét với cạnh đa giác và tô giữa các cặp giao điểm" },
+          { "key": "C", "text": "Lan tỏa sắc độ từ đỉnh cao nhất xuống đỉnh thấp nhất bằng nội suy" },
+          { "key": "D", "text": "Tính trọng tâm đa giác và vẽ tam giác từ trọng tâm đến các cạnh" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q31",
+        "text": "Một đối tượng 3D có tọa độ trong World Space là (10,5,100). Camera tại gốc tọa độ và Near Plane cách gốc d=2. Tọa độ y sau khi chiếu phối cảnh là bao nhiêu?",
+        "options": [
+          { "key": "A", "text": "2.5" },
+          { "key": "B", "text": "0.05" },
+          { "key": "C", "text": "0.1" },
+          { "key": "D", "text": "0.2" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q32",
+        "text": "Khi hiển thị mô hình 3D low-poly nhưng bề mặt cần trông mượt mà dưới ánh sáng, kỹ thuật tô bóng nào là tối ưu?",
+        "options": [
+          { "key": "A", "text": "Gouraud Shading (nội suy màu sắc trên bề mặt)" },
+          { "key": "B", "text": "Constant Shading" },
+          { "key": "C", "text": "Wireframe Rendering" },
+          { "key": "D", "text": "Flat Shading (một pháp tuyến cho mỗi đa giác)" }
+        ],
+        "answer": "A",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q33",
+        "text": "Áp dụng thuật toán DDA để vẽ đoạn thẳng từ A(2,4) đến B(7,10), số bước (Steps) tối đa cần thực hiện là bao nhiêu?",
+        "options": [
+          { "key": "A", "text": "1" },
+          { "key": "B", "text": "6" },
+          { "key": "C", "text": "5" },
+          { "key": "D", "text": "11" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q34",
+        "text": "Để khắc phục hiện tượng đường thẳng bị đứt đoạn (Gaps) khi hệ số góc tiến tới vô cùng (m→∞) trong y=mx+b, kỹ thuật Rasterization nào tối ưu nhất?",
+        "options": [
+          { "key": "A", "text": "Biến thể DDA tăng số lượng phép tính dấu phẩy động" },
+          { "key": "B", "text": "Thuật toán Bresenham với tham số quyết định (Decision Parameter)" },
+          { "key": "C", "text": "Giảm bước nhảy Δx xuống nhỏ hơn kích thước một pixel" },
+          { "key": "D", "text": "Dùng phương trình tham số phụ thuộc góc lượng giác" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q35",
+        "text": "Trong Graphics Pipeline, nếu bỏ qua giai đoạn Fragment Shader, quá trình kết xuất sẽ gặp hệ quả nào?",
+        "options": [
+          { "key": "A", "text": "Không thể xác định màu sắc và độ sáng chi tiết cho từng pixel" },
+          { "key": "B", "text": "Các đỉnh không thể chuyển đổi sang hệ tọa độ màn hình chuẩn hóa" },
+          { "key": "C", "text": "Đa giác không được cắt xén khi vượt ra khỏi vùng nhìn camera" },
+          { "key": "D", "text": "Không thể áp dụng biến đổi affine lên các đỉnh mô hình" }
+        ],
+        "answer": "A",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q36",
+        "text": "Đặc điểm tạo ảnh của thiết bị màn hình quét dòng (Raster Display) là gì?",
+        "options": [
+          { "key": "A", "text": "Quét chùm tia/tín hiệu lần lượt theo từng hàng từ trên xuống dưới màn hình" },
+          { "key": "B", "text": "Cập nhật đồng thời toàn bộ ma trận điểm ảnh trong một xung nhịp" },
+          { "key": "C", "text": "Chiếu sáng ngẫu nhiên các hạt phosphor dựa theo nhiễu" },
+          { "key": "D", "text": "Vẽ tia sáng theo biên dạng hình học như thiết bị vẽ đồ thị" }
+        ],
+        "answer": "A",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q37",
+        "text": "Đặc điểm quang học của phép chiếu trực giao (Orthographic Projection) khác với phép chiếu phối cảnh ở điểm nào?",
+        "options": [
+          { "key": "A", "text": "Phóng to vật thể ở xa để tăng chi tiết hậu cảnh" },
+          { "key": "B", "text": "Bảo toàn tính song song của các đường thẳng và không tạo thu nhỏ theo chiều sâu" },
+          { "key": "C", "text": "Ánh xạ đường thẳng 3D thành đường cong trên mặt phẳng quan sát" },
+          { "key": "D", "text": "Quy tụ toàn bộ tia chiếu về một điểm tụ" }
+        ],
+        "answer": "B",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q38",
+        "text": "Tác động của việc tắt cơ chế Double Buffering trong hiển thị đồ họa tương tác là gì?",
+        "options": [
+          { "key": "A", "text": "Tăng gấp đôi tốc độ xử lý đỉnh của GPU" },
+          { "key": "B", "text": "Giảm một nửa chi phí tính toán phối cảnh" },
+          { "key": "C", "text": "Xảy ra hiện tượng rách hình do đọc bộ đệm khi chưa vẽ xong" },
+          { "key": "D", "text": "Gây sai lệch biến đổi ma trận trong xử lý đỉnh" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q39",
+        "text": "Tích vô hướng (Dot Product) của hai vector được ứng dụng phổ biến nhất trong tác vụ đồ họa nào?",
+        "options": [
+          { "key": "A", "text": "Biến đổi tọa độ đỉnh từ View Space sang Clip Space" },
+          { "key": "B", "text": "Nội suy màu dọc theo cạnh đa giác trong scanline" },
+          { "key": "C", "text": "Tính góc tương đối giữa các vector để xác định cường độ chiếu sáng (ví dụ mô hình Phong)" },
+          { "key": "D", "text": "Tìm vector pháp tuyến vuông góc với mặt phẳng chứa hai vector ban đầu" }
+        ],
+        "answer": "C",
+        "explanation": ""
+      },
+      {
+        "id": "dht_q40",
+        "text": "Trong mô hình chiếu sáng Phong, thành phần phản xạ gương (Specular) phụ thuộc vào cosin của góc giữa hai vector nào?",
+        "options": [
+          { "key": "A", "text": "Vector pháp tuyến N và vector phản xạ R" },
+          { "key": "B", "text": "Vector hướng nhìn V và vector hướng sáng L" },
+          { "key": "C", "text": "Vector pháp tuyến N và vector hướng sáng L" },
+          { "key": "D", "text": "Vector phản xạ R và vector hướng nhìn V" }
+        ],
+        "answer": "D",
+        "explanation": ""
+      }
+    ]
+  },
+  {
+    "id": "exam_builtin_demo_1",
+    "title": "Đề demo (mặc định)",
+    "description": "5 câu • thử nhanh",
+    "source": "builtin",
+    "questions": [
+      {
+        "id": "q1",
+        "text": "1 + 2 = ?",
+        "options": [
+          { "key": "A", "text": "2" },
+          { "key": "B", "text": "3" },
+          { "key": "C", "text": "4" }
+        ],
+        "answer": "B",
+        "explanation": "1 + 2 = 3."
+      },
+      {
+        "id": "q2",
+        "text": "Thủ đô Việt Nam là?",
+        "options": [
+          { "key": "A", "text": "Hà Nội" },
+          { "key": "B", "text": "Huế" },
+          { "key": "C", "text": "Đà Nẵng" }
+        ],
+        "answer": "A",
+        "explanation": "Hà Nội là thủ đô của Việt Nam."
+      },
+      {
+        "id": "q3",
+        "text": "Chọn phương án đúng về HTTP status 404:",
+        "options": [
+          { "key": "A", "text": "Thành công" },
+          { "key": "B", "text": "Không tìm thấy" },
+          { "key": "C", "text": "Lỗi máy chủ" }
+        ],
+        "answer": "B",
+        "explanation": "404 = Not Found."
+      },
+      {
+        "id": "q4",
+        "text": "CSS property nào dùng để bo góc?",
+        "options": [
+          { "key": "A", "text": "border-radius" },
+          { "key": "B", "text": "box-shadow" },
+          { "key": "C", "text": "letter-spacing" }
+        ],
+        "answer": "A",
+        "explanation": "border-radius dùng để bo góc."
+      },
+      {
+        "id": "q5",
+        "text": "JavaScript: kiểu dữ liệu nào sau đây là primitive?",
+        "options": [
+          { "key": "A", "text": "Object" },
+          { "key": "B", "text": "Array" },
+          { "key": "C", "text": "String" }
+        ],
+        "answer": "C",
+        "explanation": "String là primitive."
+      }
+    ]
+  }
+]
+
