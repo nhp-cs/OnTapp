@@ -163,7 +163,7 @@ function renderQuestion() {
   const qid = questionOrder[currentPos];
   const q = questionById.get(qid);
 
-  els.qIndex.textContent = `Câu ${currentPos + 1}`;
+  els.qIndex.textContent = `Câu\u00A0${currentPos + 1}`;
   els.qText.textContent = q.text;
 
   const selected = answersByQid[qid] ?? null;
@@ -372,6 +372,8 @@ async function boot() {
 
 bindEvents();
 boot();
+
+
 
 
 

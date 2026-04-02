@@ -398,7 +398,7 @@ textarea {
 }
 
 .qindex {
-  min-width: 74px;
+  min-width: 96px;
   height: 40px;
   padding: 0 10px;
   border-radius: 12px;
@@ -411,6 +411,7 @@ textarea {
   font-size: 13px;
   line-height: 1;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .qtext {
@@ -455,7 +456,7 @@ textarea {
 }
 
 .opt__text {
-  line-height: 1.5;\r\n  font-weight: 500;
+  line-height: 1.5;`r`n  font-weight: 500;
   white-space: pre-wrap;
   padding-top: 2px;
 }
@@ -565,6 +566,9 @@ textarea {
 .footer {
   padding-bottom: 28px;
 }
+
+
+
 
 
 
