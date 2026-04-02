@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f6f7fb;
   --panel: #ffffff;
   --panel2: #ffffff;
@@ -26,7 +26,22 @@ body {
 
 body {
   margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-family:
+    "Segoe UI Variable",
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: var(--text);
   background:
     radial-gradient(900px 520px at 12% -10%, rgba(37, 99, 235, 0.12), transparent 60%),
@@ -69,13 +84,13 @@ code {
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.98), rgba(29, 78, 216, 0.86));
   box-shadow: var(--shadow);
   color: #fff;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.2px;
 }
 
 .brand__title {
-  font-weight: 900;
-  letter-spacing: 0.2px;
+  font-weight: 800;
+  letter-spacing: 0;
 }
 
 .brand__subtitle {
@@ -131,7 +146,7 @@ code {
 }
 
 .h3 {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .muted {
@@ -236,7 +251,7 @@ code {
   padding: 10px 12px;
   border-radius: 12px;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .btn:hover {
@@ -291,7 +306,7 @@ code {
 }
 
 .exam__title {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .exam__desc {
@@ -368,7 +383,7 @@ code {
   padding: 8px 0;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .qnavBtn:hover {
@@ -399,12 +414,12 @@ code {
   place-items: center;
   background: rgba(15, 23, 42, 0.04);
   border: 1px solid rgba(15, 23, 42, 0.12);
-  font-weight: 950;
+  font-weight: 800;
 }
 
 .qtext {
-  font-weight: 900;
-  line-height: 1.35;
+  font-weight: 700;
+  line-height: 1.5;
   white-space: pre-wrap;
 }
 
@@ -440,11 +455,11 @@ code {
   background: rgba(37, 99, 235, 0.08);
   border: 1px solid rgba(37, 99, 235, 0.18);
   color: rgba(29, 78, 216, 1);
-  font-weight: 950;
+  font-weight: 800;
 }
 
 .opt__text {
-  line-height: 1.35;
+  line-height: 1.5;\r\n  font-weight: 500;
   white-space: pre-wrap;
   padding-top: 2px;
 }
@@ -484,7 +499,7 @@ code {
 
 .score {
   font-size: 18px;
-  font-weight: 950;
+  font-weight: 800;
   margin: 8px 0 4px;
 }
 
@@ -509,12 +524,12 @@ code {
 }
 
 .reviewItem__title {
-  font-weight: 950;
+  font-weight: 800;
 }
 
 .badge {
   font-size: 12px;
-  font-weight: 950;
+  font-weight: 800;
   padding: 5px 10px;
   border-radius: 999px;
   border: 1px solid rgba(15, 23, 42, 0.12);
@@ -533,8 +548,8 @@ code {
 
 .reviewItem__q {
   margin-top: 10px;
-  font-weight: 800;
-  line-height: 1.35;
+  font-weight: 700;
+  line-height: 1.5;
   white-space: pre-wrap;
 }
 
@@ -554,4 +569,6 @@ code {
 .footer {
   padding-bottom: 28px;
 }
+
+
 
